@@ -2984,3 +2984,53 @@ input[type="search"] {
     margin-inline: 0 !important;
   }
 }
+/* 2026-07-28 mobile timeline fine tune
+   年札位置、時代カード見出し、左アイコン中心合わせの最終調整。 */
+@media (max-width: 760px) {
+  .era-group {
+    margin-top: 62px !important;
+  }
+
+  .era-group::after {
+    top: -56px !important;
+  }
+
+  .era-group > summary .group-copy {
+    min-width: 0 !important;
+  }
+
+  .era-group > summary .group-copy strong,
+  .era-group > summary .group-copy span:last-child {
+    display: block !important;
+    width: 100% !important;
+    max-width: calc(100% - 4px) !important;
+  }
+
+  .era-group > summary .group-copy strong {
+    font-size: 1.06rem !important;
+    line-height: 1.22 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .era-group > summary .group-copy span:last-child {
+    font-size: .76rem !important;
+    line-height: 1.25 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .era-head h2 {
+    font-size: clamp(1.45rem, 7.2vw, 1.9rem) !important;
+    line-height: 1.14 !important;
+    margin-bottom: 7px !important;
+  }
+
+  .era-head p:last-child {
+    max-width: 100% !important;
+    font-size: .86rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .era::before {
+    left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 20px) !important;
+  }
+}
