@@ -2764,3 +2764,104 @@ input[type="search"] {
 
 
 
+
+/* 2026-07-28 mobile large-category alignment: match world-history spacing */
+@media (max-width: 760px) {
+  :root {
+    --mobile-line-x: 56px;
+    --mobile-card-left: 88px;
+  }
+
+  .timeline {
+    padding-left: 0 !important;
+    padding-right: 8px !important;
+  }
+
+  .timeline::before {
+    left: var(--mobile-line-x) !important;
+    width: 3px !important;
+  }
+
+  .era-group {
+    margin-left: var(--mobile-card-left) !important;
+    margin-right: 8px !important;
+    width: auto !important;
+  }
+
+  .era-group > summary,
+  .era-card {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .era-group > summary {
+    min-height: 152px !important;
+    padding: 18px 48px 20px 18px !important;
+    gap: 10px !important;
+  }
+
+  .group-icon {
+    top: 18px !important;
+    left: 18px !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.2rem !important;
+  }
+
+  .group-copy {
+    padding-top: 16px !important;
+    padding-left: 58px !important;
+    gap: 5px !important;
+  }
+
+  .group-copy .eyebrow {
+    font-size: .8rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .group-copy strong {
+    max-width: 9.5em !important;
+    font-size: clamp(1.24rem, 6vw, 1.52rem) !important;
+    line-height: 1.18 !important;
+  }
+
+  .group-copy span:last-child {
+    font-size: .78rem !important;
+    line-height: 1.28 !important;
+  }
+
+  .group-focus {
+    max-width: calc(100% - 48px) !important;
+    padding: 7px 9px !important;
+    font-size: .76rem !important;
+    line-height: 1.28 !important;
+  }
+
+  .group-action {
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+  }
+
+  .era-group::after,
+  .era::after,
+  .timeline-subcategory-year-label {
+    left: calc(-1 * var(--mobile-card-left) + 8px) !important;
+    width: 76px !important;
+    max-width: 76px !important;
+    min-height: 38px !important;
+    padding: 5px 6px !important;
+    font-size: .62rem !important;
+    line-height: 1.22 !important;
+    text-align: center !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .era-group::before,
+  .era::before {
+    left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 16px) !important;
+  }
+}
