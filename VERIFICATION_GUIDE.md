@@ -1062,3 +1062,4 @@ rg -n "SamKirkland/FTP-Deploy-Action|server-dir: public_html/www.realemotionfact
 4. `Runtime.evaluate` で `getComputedStyle()` と `getBoundingClientRect()` を確認する。
 
 トップと学び方のスマホ表示を確認する場合は、`#top` が `display: grid`、`#intro` が `display: block`、どちらも高さと表示テキストを持つことを確認する。
+- 2026-07-28、PowerShellだけでCDP WebSocketを直接扱うスマホ幅一括計測はタイムアウトしやすかった。`Page.loadEventFired` やWebSocket受信待ちで止まる場合があるため、同じ長いCDPスクリプトを繰り返さない。携帯レイアウト確認では、まず `styles.css` の最終上書き順、`scripts/verify-static.ps1`、Chrome headlessの幅別スクリーンショット生成を使い、必要な場合だけ短いCDP計測に分ける。

@@ -2937,3 +2937,50 @@ input[type="search"] {
     font-size: 1.35rem !important;
   }
 }
+/* 2026-07-28 mobile timeline/card layout consolidation
+   携帯表示の縦ライン・大カテゴリー幅・子カテゴリー幅の最終上書き。 */
+@media (max-width: 760px) {
+  :root {
+    --mobile-line-x: 36px;
+    --mobile-card-left: 58px;
+  }
+
+  .timeline {
+    padding-right: 6px !important;
+    overflow-x: hidden !important;
+  }
+
+  .timeline::before {
+    left: var(--mobile-line-x) !important;
+  }
+
+  .era-group {
+    margin-left: var(--mobile-card-left) !important;
+    padding-left: 0 !important;
+  }
+
+  .era-group::before,
+  .era::before {
+    left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 16px) !important;
+  }
+
+  .era-group > summary,
+  .era-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .era-group > summary .group-copy strong {
+    font-size: 1.06rem !important;
+    line-height: 1.22 !important;
+  }
+
+  .era-card .era-body > .action-subcategory-section,
+  .era-card .era-body > .era-kingdoms,
+  .era-card .era-body > .action-subcategory-section .subcategory-list,
+  .era-card .era-body > .action-subcategory-section .event-subcategory-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+  }
+}
