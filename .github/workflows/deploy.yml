@@ -1,0 +1,45 @@
+name: Deploy jhistory to CORESERVER FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-jhistory-coreserver
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: FTP deploy to CORESERVER
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare public files
+        run: |
+          set -euo pipefail
+          rm -rf public-deploy
+          mkdir -p public-deploy
+          cp index.html script.js styles.css public-deploy/
+          cp -R data assets public-deploy/
+          find public-deploy -name 'Thumbs.db' -delete
+          find public-deploy -name '*.psd' -delete
+
+      - name: Deploy by FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.CORESERVER_FTP_SERVER }}
+          username: ${{ secrets.CORESERVER_FTP_USERNAME }}
+          password: ${{ secrets.CORESERVER_FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./public-deploy/
+          server-dir: public_html/www.realemotionfactory.com/jhistory/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/Thumbs.db

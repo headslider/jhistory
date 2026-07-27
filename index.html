@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>スクロールでわかる 日本のれきし</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Noto+Serif+JP:wght@500;700;900&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260722-tooltip-hover-link-distinction">
+  </head>
+  <body>
+    <header class="topbar" aria-label="現在地と設定">
+      <button class="icon-button" id="menuButton" aria-label="ページ目次を開く" aria-expanded="false" aria-controls="eraDrawer">☰</button>
+      <div class="now-era">
+        <span>いま</span>
+        <strong id="currentEra">はじまり</strong>
+      </div>
+      <div class="settings">
+        <button class="chip lineage-open-button" id="lineageOpenButton" type="button" aria-expanded="false" aria-controls="lineageTabs">オプション</button>
+      </div>
+    </header>
+    <nav class="lineage-drawer" id="lineageTabs" aria-label="オプションメニュー"></nav>
+
+
+
+    <div class="lineage-overlay" id="lineageOverlay" aria-hidden="true" hidden>
+      <div class="lineage-backdrop" data-lineage-close></div>
+      <section class="lineage-panel" role="dialog" aria-modal="true" aria-labelledby="lineageTitle">
+        <div class="lineage-panel-toolbar">
+          <button class="icon-button lineage-close-button" id="lineageCloseButton" type="button" aria-label="オプションを閉じる">×</button>
+        </div>
+        <div class="lineage-panel-head">
+          <p class="eyebrow">テーマでつなぐ</p>
+          <h2 id="lineageTitle">系譜で学ぶ歴史</h2>
+          <p id="lineageSummary">出来事を時代順だけでなく、テーマごとのつながりで見直します。</p>
+        </div>
+        <div class="lineage-detail" id="lineageDetail"></div>
+        <div class="lineage-content-frame">
+          <div class="lineage-list" id="lineageList" aria-live="polite"></div>
+        </div>
+      </section>
+    </div>
+    <nav class="era-drawer" id="eraDrawer" aria-label="ページ目次">
+      <div class="drawer-head">
+        <strong>ページ目次</strong>
+        <button class="icon-button" id="closeDrawer" aria-label="閉じる">×</button>
+      </div>
+      <div id="eraLinks" class="era-links"></div>
+    </nav>
+
+    <main>
+      <section class="hero" id="top">
+        <img src="assets/hero-history.webp" alt="日本の歴史をたどる明るいイラストの道">
+        <div class="hero-copy">
+          <p class="eyebrow">スクロールで旅する</p>
+          <h1>日本のれきし</h1>
+          <p>お米づくり、国のまとまり、武士、町のくらし、そして今へ。下へ進むだけで、時代の流れが見えてきます。</p>
+          <a class="start-link" href="#era-jomon">はじめる</a>
+        </div>
+      </section>
+
+      <section class="intro section-band" id="intro">
+        <h2>まず、日本列島のくらしから</h2>
+        <p>このサイトは、紀元前1000年ごろから始まります。年号をたくさん覚えるより、「なぜ人が集まり、どんなしくみを作ったか」を見ていきます。</p>
+        <div class="guide-grid">
+          <div><span>🌾</span><strong>くらし</strong><p>食べもの、家、道具の変化</p></div>
+          <div><span>🏯</span><strong>国としくみ</strong><p>人がまとまった理由</p></div>
+          <div><span>👤</span><strong>人物</strong><p>何のために動いたのか</p></div>
+        </div>
+      </section>
+
+
+      <section id="timeline" class="timeline" aria-label="縦スクロール年表"></section>
+
+      <section class="people-section section-band" id="people">
+        <details class="people-accordion">
+          <summary>
+            <span>
+              <span class="eyebrow">人物図鑑</span>
+              <strong>時代を動かした人たち</strong>
+            </span>
+            <span class="group-action disclosure-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="people-panel">
+            <div class="section-title-row">
+              <div>
+                <p class="eyebrow">ジャンル別</p>
+                <h2>人物カードを選んで見る</h2>
+              </div>
+              <input id="peopleSearch" type="search" placeholder="名前・時代でさがす" aria-label="人物検索">
+            </div>
+            <div class="people-tools">
+              <button class="chip active" data-filter="all">すべて</button>
+            </div>
+            <div id="peopleGrid" class="people-grid"></div>
+          </div>
+        </details>
+      </section>
+
+      <section class="quiz section-band" id="quiz">
+        <p class="eyebrow">ミニクイズ</p>
+        <h2>見たあとに、少しだけためそう</h2>
+        <div id="quizCard" class="quiz-card"></div>
+      </section>
+
+      <section class="teacher section-band" id="guide">
+        <p class="eyebrow">保護者・先生へ</p>
+        <h2>使い方のヒント</h2>
+        <p>1回で全部読む必要はありません。気になった時代を1つ選び、「人々のくらし」「大きな力」「人物」の3つを声に出して確認すると、歴史の流れがつかみやすくなります。</p>
+      </section>
+    </main>
+    <dialog id="personDialog" class="person-dialog">
+      <button class="icon-button close-modal" id="closePerson" aria-label="閉じる">×</button>
+      <div id="personDetail"></div>
+    </dialog>
+
+    <script src="data/history-content.js"></script>
+    <script src="data/people-data.js"></script>
+    <script src="data/action-cards.js?v=20260710-jugaku-menu-genre"></script>
+    <script src="data/lineage-themes.js?v=20260716-side-menu"></script>
+    <script src="data/learning-terms.js?v=20260714-external"></script>
+    <script src="script.js?v=20260722-tooltip-hover-link-distinction"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>画像作業ページ | 日本のれきし</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="image-workbench.css">
+  </head>
+  <body>
+    <header class="workbench-header">
+      <div>
+        <p class="eyebrow">日本史教材 管理</p>
+        <h1>画像作業ページ</h1>
+      </div>
+      <a class="home-link" href="http://127.0.0.1:4184/index.html">教材を開く</a>
+    </header>
+
+    <main class="workbench-shell">
+      <section class="toolbar" aria-label="絞り込み">
+        <label>種類<select id="typeFilter"><option value="all">すべて</option><option value="person">人物カード</option><option value="action">アクションカード</option><option value="subcategory">子カテゴリー</option></select></label>
+        <label>画像<select id="imageFilter"><option value="all">すべて</option><option value="missing">未設定</option><option value="set">設定済み</option><option value="changed">変更あり</option></select></label>
+        <label class="search-label">検索<input id="searchInput" type="search" placeholder="名前・時代・タグ・説明で検索"></label>
+      </section>
+
+      <section class="summary-strip" aria-label="件数">
+        <span id="summaryTotal">0件</span><span id="summaryMissing">未設定 0件</span><span id="summaryChanged">変更 0件</span>
+      </section>
+
+      <div class="main-grid">
+        <section class="record-list-panel" aria-label="対象一覧"><div id="recordList" class="record-list"></div></section>
+        <section class="editor-panel" aria-label="画像編集">
+          <div id="emptyState" class="empty-state">左の一覧から編集する項目を選択してください。</div>
+          <article id="editor" class="editor" hidden>
+            <div class="editor-head">
+              <div><p id="editorType" class="eyebrow"></p><h2 id="editorTitle"></h2><p id="editorMeta" class="meta"></p></div>
+              <a id="webSearchLink" class="secondary-button" target="_blank" rel="noreferrer">画像検索</a>
+            </div>
+            <div class="preview-grid">
+              <figure><figcaption>本体で表示される画像</figcaption><div class="image-frame"><img id="currentPreview" alt=""></div></figure>
+              <figure><figcaption>直接割り当て・入力中の画像</figcaption><div class="image-frame"><img id="nextPreview" alt=""></div></figure>
+            </div>
+            <p id="visualSourceStatus" class="visual-source-status"></p><div class="inspect-row"><button id="copyDisplayedImageButton" class="secondary-button" type="button">表示画像URLをコピー</button><button id="copyDirectImageButton" class="secondary-button" type="button">直接割り当てURLをコピー</button></div>
+            <label class="full-label">画像URL・相対パス・アップロード画像<input id="imageInput" type="text" placeholder="https://example.com/image.jpg または assets/... またはアップロード画像"></label>
+                        <div class="category-image-row">
+              <label>既存カテゴリー画像<select id="categoryImageSelect"><option value="">カテゴリー画像を選択</option></select></label>
+              <p id="categoryImageStatus" class="category-image-status">人物カード・アクションカードには、既存の大カテゴリー・時代・子カテゴリー画像を選んで入力できます。</p>
+            </div>
+            <div class="upload-row">
+              <label class="file-picker">画像ファイルを選択<input id="fileInput" type="file" accept="image/*"></label>
+              <div id="dropZone" class="drop-zone" tabindex="0">画像をドラッグ&ドロップ、または貼り付け</div>
+            </div>
+            <div class="optimize-row">
+              <label>最大辺<select id="maxSizeInput"><option value="960">960px</option><option value="1280" selected>1280px</option><option value="1600">1600px</option></select></label>
+              <label>画質<select id="qualityInput"><option value="0.72">軽量</option><option value="0.82" selected>標準</option><option value="0.9">高画質</option></select></label>
+              <label>形式<select id="formatInput"><option value="image/webp" selected>WebP</option><option value="image/jpeg">JPEG</option></select></label>
+            </div>
+            <p id="sizeStatus" class="size-status">アップロード画像は自動で軽量化されます。</p>
+            <div class="form-row">
+              <label id="focusField">表示位置<select id="focusInput"><option value="center">center</option><option value="up">up</option><option value="down">down</option></select></label>
+              <label>代替テキスト<input id="altInput" type="text" placeholder="未入力なら自動文言"></label>
+            </div>
+            <div class="button-row"><button id="applyButton" type="button">挿入・入れ替え</button><button id="deleteButton" class="danger-button" type="button">画像を削除</button><button id="revertButton" class="secondary-button" type="button">変更を戻す</button></div>
+            <p id="recordStatus" class="status-text"></p>
+          </article>
+        </section>
+      </div>
+
+      <section class="export-panel" aria-label="書き出し">
+        <div><p class="eyebrow">変更内容</p><h2>書き出し</h2></div>
+        <div class="button-row"><button id="applyToProjectButton" type="button">本体へ反映</button><label class="file-picker secondary-picker">更新JSONを読み込む<input id="jsonImportInput" type="file" accept=".json,application/json" multiple></label><button id="copyPatchButton" type="button">変更パッチをコピー</button><button id="downloadPatchButton" class="secondary-button" type="button">変更パッチを保存</button><button id="downloadJsonButton" class="secondary-button" type="button">更新JSONを保存</button></div><div class="button-row"><label>保存バックアップ<select id="backupSelect"><option value="">バックアップを読み込み中...</option></select></label><button id="reloadBackupsButton" class="secondary-button" type="button">一覧更新</button><button id="rollbackButton" class="danger-button" type="button">選択バックアップへ戻す</button></div><p id="applyStatus" class="status-text"></p>
+        <textarea id="patchOutput" readonly spellcheck="false"></textarea>
+      </section>
+    </main>
+
+    <script src="data/history-content.js"></script>
+    <script src="data/people-data.js"></script>
+    <script src="data/action-cards.js"></script>
+    <script src="image-workbench.js?v=20260708-focus-subcategory-only"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
