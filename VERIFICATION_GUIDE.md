@@ -1049,3 +1049,16 @@ rg -n "SamKirkland/FTP-Deploy-Action|server-dir: public_html/www.realemotionfact
 
 - 1つ目の検索でSSH方式の実行記述が出ない。
 - 2つ目の検索でFTP Actionと固定公開先パスが出る。
+
+## CDPでのスマホ表示検証
+
+2026-07-28、Chrome DevTools Protocolでスマホ幅の表示状態を検証する際、`Page.navigate` 後にすぐ `Runtime.evaluate` すると、`Page` / `Runtime` ドメインが有効化されていないため結果が `null` になり、無効な検証になることを確認した。同じ方法を繰り返さない。
+
+正しい手順:
+
+1. `Page.enable` と `Runtime.enable` を先に送る。
+2. `Emulation.setDeviceMetricsOverride` で対象のスマホ幅を設定する。
+3. `Page.navigate` 後、`Page.loadEventFired` を待つ。
+4. `Runtime.evaluate` で `getComputedStyle()` と `getBoundingClientRect()` を確認する。
+
+トップと学び方のスマホ表示を確認する場合は、`#top` が `display: grid`、`#intro` が `display: block`、どちらも高さと表示テキストを持つことを確認する。
