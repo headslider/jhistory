@@ -650,3 +650,5 @@ ormalizePersonRecord()` は `primaryEraId` と `genre` を保持するだけで�
 - CORESERVERの公開先パスは `public_html/www.realemotionfactory.com/jhistory/` から変更しない。
 - SSH方式へ戻す場合は、ユーザー確認後にこの章と `.github/workflows/deploy.yml` を同時に更新する。
 - FTP方式の検証は、`.github/workflows/deploy.yml` に `ssh`、`scp`、`rsync`、`appleboy`、`sftp` が残っていないこと、かつ `server-dir` が固定パスであることを確認する。
+
+- 2026-07-28: `styles.css` の携帯幅最終上書き `mobile world-history aligned group summary and era people repair` で、大カテゴリーsummaryの右固定シェブロン、見出し上寄せ、時代内人物リストの表示安定化を制御する。

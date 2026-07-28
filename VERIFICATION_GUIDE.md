@@ -1063,3 +1063,8 @@ rg -n "SamKirkland/FTP-Deploy-Action|server-dir: public_html/www.realemotionfact
 
 トップと学び方のスマホ表示を確認する場合は、`#top` が `display: grid`、`#intro` が `display: block`、どちらも高さと表示テキストを持つことを確認する。
 - 2026-07-28、PowerShellだけでCDP WebSocketを直接扱うスマホ幅一括計測はタイムアウトしやすかった。`Page.loadEventFired` やWebSocket受信待ちで止まる場合があるため、同じ長いCDPスクリプトを繰り返さない。携帯レイアウト確認では、まず `styles.css` の最終上書き順、`scripts/verify-static.ps1`、Chrome headlessの幅別スクリーンショット生成を使い、必要な場合だけ短いCDP計測に分ける。
+## Chrome CDPで携帯DOMを確認するときの注意
+
+2026-07-28、携帯幅のDOM確認で `http://127.0.0.1:<port>/json/version` の `webSocketDebuggerUrl` に接続すると、ブラウザ全体のターゲットになり `Page.enable` が存在しない失敗を確認した。この失敗は画面検証として扱わない。CDPでページを検証する場合は、Chromeを対象URL付きで起動し、`/json/list` から `type: "page"` の `webSocketDebuggerUrl` を選んで接続する。
+
+同じ検証内でPowerShellのダブルクォート文字列にJavaScriptのバッククォートを直接入れると、ブラウザへ渡す式が壊れ、Node側で `document is not defined` になる失敗を確認した。CDP検証スクリプトはシングルクォートのhere-stringで作成し、URLだけをプレースホルダー置換する。

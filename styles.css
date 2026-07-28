@@ -3118,3 +3118,166 @@ input[type="search"] {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* 2026-07-28 mobile world-history aligned group summary and era people repair
+   携帯だけ、大カテゴリーの開閉ボタンを右固定にし、見出しを上寄せ、時代人物リストを安定表示する。 */
+@media (max-width: 760px) {
+  .era-group > summary {
+    display: grid !important;
+    grid-template-columns: 42px minmax(0, 1fr) 40px !important;
+    grid-template-areas:
+      "icon copy action"
+      "icon focus action" !important;
+    align-items: start !important;
+    gap: 8px 10px !important;
+    min-height: 110px !important;
+    padding: 12px 10px 12px 12px !important;
+  }
+
+  .era-group > summary .group-icon {
+    grid-area: icon !important;
+    justify-self: start !important;
+    align-self: start !important;
+    width: 42px !important;
+    height: 42px !important;
+    margin: 0 !important;
+    font-size: 1.28rem !important;
+  }
+
+  .era-group > summary .group-copy {
+    grid-area: copy !important;
+    align-self: start !important;
+    gap: 2px !important;
+    margin-top: -2px !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    align-content: start !important;
+  }
+
+  .era-group > summary .group-copy .eyebrow {
+    font-size: .68rem !important;
+    line-height: 1.12 !important;
+  }
+
+  .era-group > summary .group-copy strong {
+    font-size: clamp(1rem, 5vw, 1.24rem) !important;
+    line-height: 1.14 !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-break: keep-all !important;
+  }
+
+  .era-group > summary .group-copy span:last-child {
+    margin-top: 1px !important;
+    font-size: .68rem !important;
+    line-height: 1.24 !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-break: keep-all !important;
+  }
+
+  .era-group > summary .group-focus {
+    grid-area: focus !important;
+    align-self: end !important;
+    justify-self: start !important;
+    max-width: min(100%, 15rem) !important;
+    padding: 5px 8px !important;
+    font-size: .67rem !important;
+    line-height: 1.2 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .era-group > summary > .group-action {
+    grid-area: action !important;
+    justify-self: end !important;
+    align-self: center !important;
+    width: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    margin: 0 !important;
+    position: static !important;
+  }
+
+  .era-people {
+    margin-top: 12px !important;
+  }
+
+  .era-people summary {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 34px !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-height: 48px !important;
+    padding: 10px 48px 10px 12px !important;
+  }
+
+  .era-people summary > span:first-child {
+    min-width: 0 !important;
+    font-size: .92rem !important;
+    line-height: 1.25 !important;
+    overflow-wrap: break-word !important;
+    word-break: keep-all !important;
+  }
+
+  .era-people summary > span:nth-child(2) {
+    position: absolute !important;
+    right: 48px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    color: var(--focus) !important;
+    font-size: .72rem !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .era-people summary > .group-action {
+    position: absolute !important;
+    right: 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+    border-radius: 8px !important;
+  }
+
+  .era-people[open] summary > .group-action {
+    transform: translateY(-50%) !important;
+  }
+
+  .era-people .mini-people {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    padding: 10px !important;
+  }
+
+  .era-people .mini-people button {
+    display: grid !important;
+    grid-template-columns: 24px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 7px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    padding: 8px 9px !important;
+    font-size: .8rem !important;
+    line-height: 1.18 !important;
+  }
+
+  .era-people .mini-people button > span:last-child {
+    min-width: 0 !important;
+    overflow-wrap: break-word !important;
+    word-break: keep-all !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .era-people .mini-people {
+    grid-template-columns: 1fr !important;
+  }
+}
