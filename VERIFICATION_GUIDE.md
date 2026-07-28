@@ -1068,3 +1068,28 @@ rg -n "SamKirkland/FTP-Deploy-Action|server-dir: public_html/www.realemotionfact
 2026-07-28、携帯幅のDOM確認で `http://127.0.0.1:<port>/json/version` の `webSocketDebuggerUrl` に接続すると、ブラウザ全体のターゲットになり `Page.enable` が存在しない失敗を確認した。この失敗は画面検証として扱わない。CDPでページを検証する場合は、Chromeを対象URL付きで起動し、`/json/list` から `type: "page"` の `webSocketDebuggerUrl` を選んで接続する。
 
 同じ検証内でPowerShellのダブルクォート文字列にJavaScriptのバッククォートを直接入れると、ブラウザへ渡す式が壊れ、Node側で `document is not defined` になる失敗を確認した。CDP検証スクリプトはシングルクォートのhere-stringで作成し、URLだけをプレースホルダー置換する。
+
+## モバイル大カテゴリー位置の検証
+
+2026-07-28、スマホ表示で大カテゴリーカードが右へ寄り、タイトルが開閉ボタンへ重なる問題を確認した。原因は、日本史側に残っていた複数のモバイル上書きCSSと、過去の3列グリッド指定が後勝ちしていたこと。今後は「世界史に合わせた」と判断する前に、次の実測を必ず行う。
+
+検証対象:
+
+- 360px、375px、390px、414pxの各スマホ幅。
+- `.timeline::before` の左位置。
+- `.era-group > summary` の `left` / `right` が画面内にあること。
+- `.group-copy strong` とサブタイトルの右端が `.group-action` の左端より4px以上左にあること。
+- `.hero` と `.intro` がスマホでも `display: none` になっていないこと。
+
+成功条件:
+
+- `scrollWidth <= innerWidth`
+- 大カテゴリーカードの `offscreenCount === 0`
+- タイトル・サブタイトルと開閉ボタンの `overlapCount === 0`
+- `heroVisible === true`、`introVisible === true`
+
+注意:
+
+- CSS内の変数値確認だけで完了扱いにしない。実際のDOM座標で判定する。
+- UNC作業フォルダでブラウザ自動化が `CreateProcessWithLogonW failed: 267` になる場合は、`C:\Users\tamak\Documents\jhistory` などローカル作業ディレクトリから、bundled Node と既存Chromeの `executablePath` を指定して確認する。
+- 同じ失敗結果を繰り返さず、失敗した幅と重なったカード名を出してからCSSを修正する。

@@ -651,4 +651,12 @@ ormalizePersonRecord()` は `primaryEraId` と `genre` を保持するだけで�
 - SSH方式へ戻す場合は、ユーザー確認後にこの章と `.github/workflows/deploy.yml` を同時に更新する。
 - FTP方式の検証は、`.github/workflows/deploy.yml` に `ssh`、`scp`、`rsync`、`appleboy`、`sftp` が残っていないこと、かつ `server-dir` が固定パスであることを確認する。
 
-- 2026-07-28: `styles.css` の携帯幅最終上書き `mobile world-history aligned group summary and era people repair` で、大カテゴリーsummaryの右固定シェブロン、見出し上寄せ、時代内人物リストの表示安定化を制御する。
+
+## 2026-07-28 モバイル大カテゴリー位置調整
+
+- 対象CSSは `styles.css` 末尾の `2026-07-28 mobile world-history position lock after audit` ブロック。
+- スマホ幅では `--mobile-line-x: 36px`、`--mobile-card-left: 58px` を最終値として使う。
+- `.era-group > summary` は2列構成 `minmax(0, 1fr) 44px` を正とし、過去の3列構成 `42px minmax(0, 1fr) 40px` は使用しない。
+- `.group-icon` はカード左上へ絶対配置し、`.group-copy` は `padding-left: 64px` でアイコン分だけ避ける。
+- `.group-copy strong` とサブタイトルは `calc(100vw - 214px)` を含む最大幅で、右端の `.group-action` に重ならないよう制限する。
+- 完了判定はCSS値だけで行わず、360px、375px、390px、414pxで `.era-group > summary`、`.group-copy strong`、`.group-action` の実測座標を確認する。
