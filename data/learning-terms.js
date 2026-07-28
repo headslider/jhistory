@@ -1328,8 +1328,7 @@ window.JAPAN_HISTORY_LEARNING_TERMS_DATA = {
         "base": "後白河天皇",
         "reading": "ごしらかわてんのう",
         "mode": "whole-term"
-      },
-      "tooltip": "平安時代末期の天皇です。保元の乱で勝利し、その後の政治に大きな影響を持ちました。"
+      }
     },
     "鳥羽上皇": {
       "reading": "とばじょうこう",
