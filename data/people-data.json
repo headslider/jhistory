@@ -352,7 +352,7 @@
         "whatDid": "保元の乱で勝利し、院政を行いました。平清盛や源頼朝と関わりながら朝廷の政治を支えました。",
         "whyImportant": "平氏から源氏へと武士の勢力が移る時代に朝廷を導き、武士による政治へ移る歴史の転換点を支えた人物であるから。"
       },
-      "image": "assets/people/person-b0f65ea30f.webp",
+      "image": "assets/people/person-eb3a8ce24b.webp",
       "imageAlt": "後白河上皇の画像"
     },
     {
@@ -3543,7 +3543,8 @@
         "whatDid": "執権として幕府の政治を主導し、承久の乱で勝利しました。六波羅探題を設置し、幕府の支配を強めました。",
         "whyImportant": "承久の乱によって武士による政治を確かなものとし、鎌倉幕府が全国を支配する基礎を築いた人物であるから。"
       },
-      "image": "assets/people/person-a9b05cb3ae.webp",
+      "image": "assets/people/person-0e20396969.webp",
+      "imageFocus": "center",
       "imageAlt": "北条義時の画像"
     },
     "北条時宗": {
@@ -6342,8 +6343,9 @@
         "whatDid": "保元の乱で勝利し、院政を行いました。平清盛や源頼朝と関わりながら朝廷の政治を支えました。",
         "whyImportant": "平氏から源氏へと武士の勢力が移る時代に朝廷を導き、武士による政治へ移る歴史の転換点を支えた人物であるから。"
       },
-      "image": "assets/people/person-b0f65ea30f.webp",
-      "imageAlt": "後白河上皇の画像"
+      "image": "",
+      "imageFocus": "center",
+      "imageAlt": ""
     }
   },
   "nameAliasPolicy": {

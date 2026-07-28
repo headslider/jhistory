@@ -762,6 +762,7 @@ function renderEraCard(era, groupPersonLinks = null, groupRubyBoldTerms = null) 
   const eraImage = eraImages[era.id];
   return `
     <article class="era" id="era-${era.id}" data-era="${era.name}" data-icon="${era.icon}" data-western-year="${era.westernYear}" style="--era-a:${era.colors[0]};--era-b:${era.colors[1]};color:${era.colors[0]}">
+      <span class="mobile-year-chip era-year-chip" aria-hidden="true">${escapeHtml(era.westernYear || "")}</span>
       <div class="era-card">
         <header class="era-head">
           <p class="eyebrow">${era.years}</p>
@@ -1082,6 +1083,7 @@ function renderTimeline() {
     return `
       <details class="era-group" id="group-${group.id}" data-era="${group.title}" data-western-year="${groupYear}" style="--group-a:${group.colors[0]};--group-b:${group.colors[1]}">
         <summary>
+          <span class="mobile-year-chip group-year-chip" aria-hidden="true">${escapeHtml(groupYear || "")}</span>
           <span class="group-icon">${group.icon}</span>
           <span class="group-copy">
             <span class="eyebrow">${group.title}</span>
@@ -1740,116 +1742,4 @@ async function initApp() {
 }
 
 initApp();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

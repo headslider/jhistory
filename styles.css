@@ -2017,49 +2017,6 @@ input[type="search"] {
   }
 }
 
-/* 2026-07-19 mobile bug fix: separate large-category year chips from card bodies */
-@media (max-width: 760px) {
-  .era-group {
-    margin-top: 56px;
-  }
-
-  .era-group::after {
-    top: -48px;
-  }
-}
-
-/* 2026-07-19 mobile bug fix: place each era year chip above its era card */
-@media (max-width: 760px) {
-  .era {
-    margin-top: 48px;
-  }
-
-  .era::after {
-    left: calc(-1 * var(--mobile-card-left) + 14px);
-    top: -40px;
-    width: 72px;
-    min-height: 34px;
-    padding: 4px 6px;
-    font-size: .62rem;
-    line-height: 1.2;
-    z-index: 2;
-  }
-}
-
-/* 2026-07-19 mobile bug fix: prevent large-category icon from overlapping title text */
-@media (max-width: 760px) {
-  .group-copy {
-    padding-top: 18px;
-    padding-left: 64px;
-  }
-}
-
-/* 2026-07-19 mobile bug fix: keep large-category icon inside the card surface */
-@media (max-width: 760px) {
-  .group-icon {
-    left: 24px;
-  }
-}
 
 /* 2026-07-19 mobile readability fix: show subcategory descriptions without expanding cards too far */
 @media (max-width: 760px) {
@@ -2836,103 +2793,6 @@ input[type="search"] {
     font-size: 1.35rem !important;
   }
 }
-/* 2026-07-28 mobile timeline/card layout consolidation
-   携帯表示の縦ライン・大カテゴリー幅・子カテゴリー幅の最終上書き。 */
-@media (max-width: 760px) {
-  :root {
-    --mobile-line-x: 36px;
-    --mobile-card-left: 58px;
-  }
-
-  .timeline {
-    padding-right: 6px !important;
-    overflow-x: hidden !important;
-  }
-
-  .timeline::before {
-    left: var(--mobile-line-x) !important;
-  }
-
-  .era-group {
-    margin-left: var(--mobile-card-left) !important;
-    padding-left: 0 !important;
-  }
-
-  .era-group::before,
-  .era::before {
-    left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 16px) !important;
-  }
-
-  .era-group > summary,
-  .era-card {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .era-group > summary .group-copy strong {
-    font-size: 1.06rem !important;
-    line-height: 1.22 !important;
-  }
-
-  .era-card .era-body > .action-subcategory-section,
-  .era-card .era-body > .era-kingdoms,
-  .era-card .era-body > .action-subcategory-section .subcategory-list,
-  .era-card .era-body > .action-subcategory-section .event-subcategory-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-inline: 0 !important;
-  }
-}
-/* 2026-07-28 mobile timeline fine tune
-   年札位置、時代カード見出し、左アイコン中心合わせの最終調整。 */
-@media (max-width: 760px) {
-  .era-group {
-    margin-top: 62px !important;
-  }
-
-  .era-group::after {
-    top: -56px !important;
-  }
-
-  .era-group > summary .group-copy {
-    min-width: 0 !important;
-  }
-
-  .era-group > summary .group-copy strong,
-  .era-group > summary .group-copy span:last-child {
-    display: block !important;
-    width: 100% !important;
-    max-width: calc(100% - 4px) !important;
-  }
-
-  .era-group > summary .group-copy strong {
-    font-size: 1.06rem !important;
-    line-height: 1.22 !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .era-group > summary .group-copy span:last-child {
-    font-size: .76rem !important;
-    line-height: 1.25 !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .era-head h2 {
-    font-size: clamp(1.45rem, 7.2vw, 1.9rem) !important;
-    line-height: 1.14 !important;
-    margin-bottom: 7px !important;
-  }
-
-  .era-head p:last-child {
-    max-width: 100% !important;
-    font-size: .86rem !important;
-    line-height: 1.45 !important;
-  }
-
-  .era::before {
-    left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 20px) !important;
-  }
-}
 /* 2026-07-28 mobile era people list repair
    携帯の「時代を動かした人たち」を見出し3列・人物2列で安定表示する。 */
 @media (max-width: 760px) {
@@ -3017,57 +2877,74 @@ input[type="search"] {
     grid-template-columns: 1fr !important;
   }
 }
+/* 2026-07-28 mobile world-history sync
+   世界史の携帯年表と同じ左軸・年代札・大カテゴリーカード構造に統一する。 */
+.mobile-year-chip {
+  display: none;
+}
 
-/* 2026-07-28 mobile world-history position lock after audit
-   世界史基準の左位置を維持しつつ、過剰な3列グリッドを撤去してタイトル切れを防ぐ。 */
 @media (max-width: 760px) {
   :root {
-    --mobile-line-x: 36px;
-    --mobile-card-left: 58px;
+    --mobile-line-x: 56px;
+    --mobile-card-left: 88px;
   }
 
   .timeline {
-    padding-right: 6px !important;
+    padding-left: 0 !important;
+    padding-right: 10px !important;
     overflow-x: hidden !important;
   }
 
   .timeline::before {
     left: var(--mobile-line-x) !important;
+    width: 4px !important;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .75) !important;
   }
 
   .era-group {
-    margin-left: var(--mobile-card-left) !important;
-    margin-right: 6px !important;
-    padding-left: 0 !important;
+    margin: 48px 0 22px var(--mobile-card-left) !important;
+    padding: 10px 0 !important;
   }
 
   .era-group > summary,
   .era-card {
+    box-sizing: border-box !important;
+    position: relative !important;
+    z-index: 1 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
 
   .era-group > summary {
     display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 44px !important;
+    grid-template-columns: 46px minmax(0, 1fr) !important;
     grid-template-areas:
-      "copy action"
-      "focus action" !important;
-    align-items: end !important;
+      "icon copy"
+      "focus focus" !important;
+    align-items: center !important;
     gap: 10px !important;
-    min-height: 152px !important;
-    padding: 18px 14px 16px !important;
+    min-height: 178px !important;
+    padding: 15px !important;
+    border-radius: 10px !important;
     overflow: hidden !important;
+    box-shadow: 0 16px 34px rgba(35, 48, 38, .16) !important;
+  }
+
+  .era-group > summary::before {
+    left: -20px !important;
+    top: 74px !important;
+    width: 20px !important;
+    height: 4px !important;
   }
 
   .era-group > summary .group-icon {
-    position: absolute !important;
-    top: 16px !important;
-    left: 16px !important;
-    width: 44px !important;
-    height: 44px !important;
+    grid-area: icon !important;
+    position: static !important;
+    width: 46px !important;
+    height: 46px !important;
     margin: 0 !important;
     font-size: 1.2rem !important;
+    background: rgba(255, 255, 255, .18) !important;
   }
 
   .era-group > summary .group-copy {
@@ -3075,55 +2952,95 @@ input[type="search"] {
     align-self: center !important;
     min-width: 0 !important;
     max-width: 100% !important;
-    padding-top: 44px !important;
-    padding-left: 64px !important;
-    gap: 4px !important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    gap: 5px !important;
+    justify-items: stretch !important;
+    text-align: left !important;
+    align-items: stretch !important;
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
   }
 
   .era-group > summary .group-copy .eyebrow {
-    font-size: .76rem !important;
-    line-height: 1.2 !important;
+    color: rgba(255, 255, 255, .92) !important;
+    font-size: .88rem !important;
+    line-height: 1.25 !important;
   }
 
   .era-group > summary .group-copy strong {
-    max-width: min(9em, calc(100vw - 214px), 100%) !important;
-    font-size: 1.02rem !important;
-    line-height: 1.22 !important;
-    overflow-wrap: break-word !important;
-    word-break: keep-all !important;
+    display: block !important;
+    width: 100% !important;
+    inline-size: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    justify-self: stretch !important;
+    color: #fff !important;
+    font-size: clamp(1.18rem, 2.35vw, 1.58rem) !important;
+    line-height: 1.18 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    line-break: strict !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .14) !important;
   }
 
   .era-group > summary .group-copy span:last-child {
-    max-width: min(12em, calc(100vw - 214px), 100%) !important;
-    font-size: .74rem !important;
-    line-height: 1.25 !important;
-    overflow-wrap: break-word !important;
-    word-break: keep-all !important;
+    display: block !important;
+    width: 100% !important;
+    inline-size: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    justify-self: stretch !important;
+    color: rgba(255, 255, 255, .86) !important;
+    font-size: .85rem !important;
+    line-height: 1.35 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    line-break: strict !important;
   }
 
   .era-group > summary .group-focus {
     grid-area: focus !important;
     justify-self: start !important;
-    max-width: calc(100% - 4px) !important;
-    padding: 6px 9px !important;
-    font-size: .72rem !important;
-    line-height: 1.25 !important;
+    align-self: end !important;
+    max-width: calc(100% - 58px) !important;
+    width: fit-content !important;
+    padding: 8px 10px !important;
+    border-radius: 7px !important;
+    color: rgba(255, 255, 255, .95) !important;
+    background: rgba(255, 255, 255, .14) !important;
+    font-size: .82rem !important;
+    line-height: 1.35 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
   }
 
   .era-group > summary > .group-action {
-    grid-area: action !important;
-    align-self: end !important;
-    justify-self: end !important;
-    position: relative !important;
-    right: auto !important;
-    bottom: auto !important;
+    grid-area: unset !important;
+    position: absolute !important;
+    right: 16px !important;
+    bottom: 18px !important;
     width: 44px !important;
     min-width: 44px !important;
+    height: 44px !important;
     min-height: 44px !important;
     margin: 0 !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, .94) !important;
+  }
+
+  .era-group[open] > summary > .group-action {
+    background: #24333d !important;
+    color: #fff !important;
+  }
+
+  .era-group::after,
+  .era::after {
+    content: none !important;
+    display: none !important;
   }
 
   .era-group::before,
@@ -3131,7 +3048,66 @@ input[type="search"] {
     left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 16px) !important;
   }
 
+  .era {
+    margin: 48px 0 22px 0 !important;
+    padding: 10px 0 !important;
+    overflow: visible !important;
+  }
+
   .era::before {
     left: calc(-1 * var(--mobile-card-left) + var(--mobile-line-x) - 20px) !important;
+    top: 34px !important;
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 13 !important;
+  }
+
+  .mobile-year-chip {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    left: calc(-1 * var(--mobile-card-left) + 8px) !important;
+    z-index: 30 !important;
+    display: grid !important;
+    place-items: center !important;
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 4px 10px !important;
+    border: 1px solid rgba(34, 48, 58, .14) !important;
+    border-radius: 8px !important;
+    background: #fffdf6 !important;
+    color: var(--ink) !important;
+    box-shadow: 0 6px 14px rgba(74, 56, 28, .08) !important;
+    font-size: .62rem !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    pointer-events: none !important;
+  }
+
+  .era-group > summary .group-year-chip {
+    top: -28px !important;
+    transform: none !important;
+  }
+
+  .era > .era-year-chip {
+    top: -20px !important;
+    transform: none !important;
+  }
+
+  .era-group > summary,
+  .era {
+    overflow: visible !important;
   }
 }
+
+
+
+
+
+
+
+
+
+

@@ -652,11 +652,11 @@ ormalizePersonRecord()` は `primaryEraId` と `genre` を保持するだけで�
 - FTP方式の検証は、`.github/workflows/deploy.yml` に `ssh`、`scp`、`rsync`、`appleboy`、`sftp` が残っていないこと、かつ `server-dir` が固定パスであることを確認する。
 
 
-## 2026-07-28 モバイル大カテゴリー位置調整
+## 2026-07-28 モバイル大カテゴリー世界史同期
 
-- 対象CSSは `styles.css` 末尾の `2026-07-28 mobile world-history position lock after audit` ブロック。
-- スマホ幅では `--mobile-line-x: 36px`、`--mobile-card-left: 58px` を最終値として使う。
-- `.era-group > summary` は2列構成 `minmax(0, 1fr) 44px` を正とし、過去の3列構成 `42px minmax(0, 1fr) 40px` は使用しない。
-- `.group-icon` はカード左上へ絶対配置し、`.group-copy` は `padding-left: 64px` でアイコン分だけ避ける。
-- `.group-copy strong` とサブタイトルは `calc(100vw - 214px)` を含む最大幅で、右端の `.group-action` に重ならないよう制限する。
-- 完了判定はCSS値だけで行わず、360px、375px、390px、414pxで `.era-group > summary`、`.group-copy strong`、`.group-action` の実測座標を確認する。
+- 対象CSSは `styles.css` 末尾の `2026-07-28 mobile world-history sync` ブロック。
+- スマホ幅では `--mobile-line-x: 56px`、`--mobile-card-left: 88px` を使い、世界史の携帯年表と同じ左年代ライン、年代札、カード左位置にそろえる。
+- `script.js` の `renderTimeline()` は大カテゴリーの `summary` 内に `.mobile-year-chip.group-year-chip` を出力し、`renderEraCard()` は時代カード内に `.mobile-year-chip.era-year-chip` を出力する。PCでは非表示、スマホだけ左年代ライン側へ表示する。
+- `.era-group > summary` は2列構成 `46px minmax(0, 1fr)` を正とし、アイコンとテキストを同じ行に置く。`.group-copy` の古い `padding-left: 64px` は使わず、タイトル領域を世界史と同じ約206px幅で確保する。
+- `.era-group > summary` のスマホ実測基準は、390px幅で左 `88px`、右 `380px`、幅 `292px`、高さ `178px`、タイトルフォント `18.88px`。横スクロールは `0px` であることを確認する。
+- 完了判定はCSS値だけで行わず、携帯幅で `.era-group > summary`、`.group-copy strong`、`.group-action`、`.mobile-year-chip` の実測座標を確認する。
