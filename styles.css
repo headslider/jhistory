@@ -1784,19 +1784,19 @@ input[type="search"] {
   }
 
   .era-head .eyebrow {
-    font-size: .84rem;
+    font-size: 1.0625rem;
   }
 
   .era-head h2 {
     margin-bottom: 8px;
-    font-size: clamp(2rem, 11vw, 2.85rem);
-    line-height: 1.08;
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    line-height: 1.25;
   }
 
   .era-head p:last-child {
     max-width: 12em;
     margin-top: 0;
-    font-size: .95rem;
+    font-size: 1.0625rem;
     line-height: 1.5;
     font-weight: 800;
   }
