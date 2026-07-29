@@ -1905,6 +1905,11 @@ input[type="search"] {
     padding-inline: 14px;
   }
 
+  .section-title-row {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
 }
 
 @media (max-width: 760px) {
