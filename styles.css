@@ -2877,8 +2877,8 @@ input[type="search"] {
     grid-template-columns: 1fr !important;
   }
 }
-/* 2026-07-28 mobile world-history sync
-   世界史の携帯年表と同じ左軸・年代札・大カテゴリーカード構造に統一する。 */
+/* 2026-07-28 mobile era-group world-history parity
+   World-history mobile layout parity: left axis, card width, connector, chevron, and title wrapping. */
 .mobile-year-chip {
   display: none;
 }
@@ -2890,8 +2890,9 @@ input[type="search"] {
   }
 
   .timeline {
-    padding-left: 0 !important;
-    padding-right: 10px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 10px 28px 0 !important;
     overflow-x: hidden !important;
   }
 
@@ -2904,6 +2905,7 @@ input[type="search"] {
   .era-group {
     margin: 48px 0 22px var(--mobile-card-left) !important;
     padding: 10px 0 !important;
+    overflow: visible !important;
   }
 
   .era-group > summary,
@@ -2917,33 +2919,32 @@ input[type="search"] {
 
   .era-group > summary {
     display: grid !important;
-    grid-template-columns: 46px minmax(0, 1fr) !important;
-    grid-template-areas:
-      "icon copy"
-      "focus focus" !important;
-    align-items: center !important;
+    grid-template-columns: minmax(0, 1fr) 44px !important;
+    grid-template-areas: "copy action" !important;
+    align-items: end !important;
     gap: 10px !important;
-    min-height: 178px !important;
-    padding: 15px !important;
+    min-height: 198px !important;
+    padding: 22px 16px 18px !important;
     border-radius: 10px !important;
     overflow: hidden !important;
     box-shadow: 0 16px 34px rgba(35, 48, 38, .16) !important;
   }
 
   .era-group > summary::before {
-    left: -20px !important;
-    top: 74px !important;
-    width: 20px !important;
+    left: calc(-1 * (var(--mobile-card-left) - var(--mobile-line-x))) !important;
+    top: 78px !important;
+    width: calc(var(--mobile-card-left) - var(--mobile-line-x)) !important;
     height: 4px !important;
   }
 
   .era-group > summary .group-icon {
-    grid-area: icon !important;
-    position: static !important;
-    width: 46px !important;
-    height: 46px !important;
+    position: absolute !important;
+    top: 22px !important;
+    left: 16px !important;
+    width: 44px !important;
+    height: 44px !important;
     margin: 0 !important;
-    font-size: 1.2rem !important;
+    font-size: 1.18rem !important;
     background: rgba(255, 255, 255, .18) !important;
   }
 
@@ -2952,77 +2953,60 @@ input[type="search"] {
     align-self: center !important;
     min-width: 0 !important;
     max-width: 100% !important;
-    padding-top: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 44px 0 0 !important;
     gap: 5px !important;
-    justify-items: stretch !important;
+    justify-items: start !important;
     text-align: left !important;
-    align-items: stretch !important;
-    display: flex !important;
-    flex-direction: column !important;
-    grid-template-columns: none !important;
+    align-items: start !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
   }
 
   .era-group > summary .group-copy .eyebrow {
     color: rgba(255, 255, 255, .92) !important;
-    font-size: .88rem !important;
+    font-size: .9rem !important;
     line-height: 1.25 !important;
   }
 
   .era-group > summary .group-copy strong {
     display: block !important;
-    width: 100% !important;
-    inline-size: 100% !important;
-    max-width: none !important;
+    max-width: 9.5em !important;
     min-width: 0 !important;
-    justify-self: stretch !important;
     color: #fff !important;
-    font-size: clamp(1.18rem, 2.35vw, 1.58rem) !important;
-    line-height: 1.18 !important;
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
+    font-size: clamp(1.62rem, 7.2vw, 2.12rem) !important;
+    line-height: 1.25 !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
     line-break: strict !important;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .14) !important;
   }
 
   .era-group > summary .group-copy span:last-child {
     display: block !important;
-    width: 100% !important;
-    inline-size: 100% !important;
-    max-width: none !important;
+    max-width: 14em !important;
     min-width: 0 !important;
-    justify-self: stretch !important;
     color: rgba(255, 255, 255, .86) !important;
-    font-size: .85rem !important;
+    font-size: .86rem !important;
     line-height: 1.35 !important;
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
     line-break: strict !important;
   }
 
   .era-group > summary .group-focus {
-    grid-area: focus !important;
-    justify-self: start !important;
-    align-self: end !important;
-    max-width: calc(100% - 58px) !important;
-    width: fit-content !important;
-    padding: 8px 10px !important;
-    border-radius: 7px !important;
-    color: rgba(255, 255, 255, .95) !important;
-    background: rgba(255, 255, 255, .14) !important;
-    font-size: .82rem !important;
-    line-height: 1.35 !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    display: none !important;
   }
 
   .era-group > summary > .group-action {
-    grid-area: unset !important;
-    position: absolute !important;
-    right: 16px !important;
-    bottom: 18px !important;
+    grid-area: action !important;
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    align-self: end !important;
+    justify-self: end !important;
     width: 44px !important;
     min-width: 44px !important;
     height: 44px !important;
@@ -3101,13 +3085,3 @@ input[type="search"] {
     overflow: visible !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
