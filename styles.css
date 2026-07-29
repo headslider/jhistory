@@ -2885,8 +2885,8 @@ input[type="search"] {
 
 @media (max-width: 760px) {
   :root {
-    --mobile-line-x: 56px;
-    --mobile-card-left: 88px;
+    --mobile-line-x: 36px;
+    --mobile-card-left: 58px;
   }
 
   .timeline {
@@ -2919,81 +2919,84 @@ input[type="search"] {
 
   .era-group > summary {
     display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 44px !important;
-    grid-template-areas: "copy action" !important;
-    align-items: end !important;
+    grid-template-columns: auto minmax(0, 1fr) auto !important;
+    grid-template-areas: none !important;
+    align-items: center !important;
     gap: 10px !important;
-    min-height: 198px !important;
-    padding: 22px 16px 18px !important;
-    border-radius: 10px !important;
-    overflow: hidden !important;
-    box-shadow: 0 16px 34px rgba(35, 48, 38, .16) !important;
+    min-height: 78px !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    overflow: visible !important;
+    box-shadow: 0 14px 34px rgba(45, 36, 21, .14) !important;
   }
 
   .era-group > summary::before {
     left: calc(-1 * (var(--mobile-card-left) - var(--mobile-line-x))) !important;
-    top: 78px !important;
+    top: 36px !important;
     width: calc(var(--mobile-card-left) - var(--mobile-line-x)) !important;
-    height: 4px !important;
+    height: 6px !important;
+    border-radius: 999px !important;
   }
 
   .era-group > summary .group-icon {
-    position: absolute !important;
-    top: 22px !important;
-    left: 16px !important;
-    width: 44px !important;
-    height: 44px !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 46px !important;
+    height: 46px !important;
     margin: 0 !important;
-    font-size: 1.18rem !important;
+    font-size: 1.45rem !important;
     background: rgba(255, 255, 255, .18) !important;
+    border: 2px solid rgba(255, 255, 255, .42) !important;
   }
 
   .era-group > summary .group-copy {
-    grid-area: copy !important;
+    grid-area: auto !important;
     align-self: center !important;
     min-width: 0 !important;
     max-width: 100% !important;
-    padding: 44px 0 0 !important;
-    gap: 5px !important;
+    padding: 0 !important;
+    gap: 1px !important;
+    align-content: center !important;
     justify-items: start !important;
     text-align: left !important;
-    align-items: start !important;
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
   .era-group > summary .group-copy .eyebrow {
-    color: rgba(255, 255, 255, .92) !important;
-    font-size: .9rem !important;
+    color: rgba(255, 255, 255, .78) !important;
+    font-size: clamp(.76rem, 1.5vw, .92rem) !important;
+    font-weight: 700 !important;
     line-height: 1.25 !important;
   }
 
   .era-group > summary .group-copy strong {
     display: block !important;
-    max-width: 9.5em !important;
+    max-width: none !important;
     min-width: 0 !important;
     color: #fff !important;
-    font-size: clamp(1.62rem, 7.2vw, 2.12rem) !important;
-    line-height: 1.25 !important;
+    font-family: var(--font-serif) !important;
+    font-size: 1.06rem !important;
+    font-weight: 900 !important;
+    line-height: 1.22 !important;
     overflow-wrap: normal !important;
-    word-break: keep-all !important;
-    line-break: strict !important;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .14) !important;
+    word-break: normal !important;
+    line-break: auto !important;
   }
 
   .era-group > summary .group-copy span:last-child {
     display: block !important;
-    max-width: 14em !important;
+    max-width: none !important;
     min-width: 0 !important;
-    color: rgba(255, 255, 255, .86) !important;
-    font-size: .86rem !important;
+    color: rgba(255, 255, 255, .74) !important;
+    font-size: clamp(.78rem, 1.5vw, .92rem) !important;
+    font-weight: 500 !important;
     line-height: 1.35 !important;
     white-space: normal !important;
     overflow: visible !important;
-    text-overflow: clip !important;
     overflow-wrap: normal !important;
-    word-break: keep-all !important;
-    line-break: strict !important;
+    word-break: normal !important;
   }
 
   .era-group > summary .group-focus {
@@ -3001,11 +3004,11 @@ input[type="search"] {
   }
 
   .era-group > summary > .group-action {
-    grid-area: action !important;
+    grid-area: auto !important;
     position: relative !important;
     right: auto !important;
     bottom: auto !important;
-    align-self: end !important;
+    align-self: center !important;
     justify-self: end !important;
     width: 44px !important;
     min-width: 44px !important;
