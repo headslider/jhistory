@@ -2887,11 +2887,6 @@ input[type="search"] {
   }
 }
 
-@media (max-width: 380px) {
-  .era-people .mini-people {
-    grid-template-columns: 1fr !important;
-  }
-}
 /* 2026-07-28 mobile era-group world-history parity
    World-history mobile layout parity: left axis, card width, connector, chevron, and title wrapping. */
 .mobile-year-chip {
