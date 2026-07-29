@@ -606,6 +606,7 @@ function applyStudyRuby(text, options = {}) {
 const inlineLinkAliases = [
   { name: "第二次世界大戦", type: "action", target: "第二次世界大戦 (太平洋戦争含む )" },
   { name: "太平洋戦争", type: "action", target: "太平洋戦争(第二次世界大戦)" },
+  { name: "北条氏", type: "action", target: "鎌倉北条氏" },
   { name: "比叡山延暦寺焼き討ち", type: "event", target: "sengoku-ishiyama-hieizan" },
   { name: "羽柴秀吉", type: "person", target: "豊臣秀吉" },
   { name: "秀吉", type: "person", target: "豊臣秀吉" },
@@ -1742,4 +1743,3 @@ async function initApp() {
 }
 
 initApp();
-

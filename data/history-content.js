@@ -1148,7 +1148,10 @@ window.historyContentData = {
                 "新田義貞",
                 "楠木正成"
               ],
-              "yearLabel": "1334年ごろ"
+              "yearLabel": "1334年ごろ",
+              "image": "assets/subcategories/subcategory-634c235220.webp",
+              "imageFocus": "center",
+              "imageAlt": "建武の新政の画像"
             },
             {
               "id": "muromachi-nanbokucho",
@@ -1172,7 +1175,7 @@ window.historyContentData = {
                 "楠木正成"
               ],
               "image": "assets/subcategories/subcategory-725672887e.webp",
-              "imageFocus": "center",
+              "imageFocus": "down",
               "imageAlt": "南北朝時代に関係する室町時代の画像",
               "yearLabel": "1336年ごろ"
             },
