@@ -4,6 +4,7 @@
     {
       "name": "卑弥呼",
       "kana": "ひみこ",
+      "lifespan": "?～?",
       "era": "弥生時代",
       "primaryEraId": "yayoi",
       "genre": "politics",
@@ -22,6 +23,7 @@
     {
       "name": "聖徳太子",
       "kana": "しょうとくたいし",
+      "lifespan": "574～622",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -44,6 +46,7 @@
     {
       "name": "推古天皇",
       "kana": "すいこてんのう",
+      "lifespan": "554～628",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -62,6 +65,7 @@
     {
       "name": "中大兄皇子（天智天皇）",
       "kana": "なかのおおえのおうじ（てんじてんのう）",
+      "lifespan": "626～672",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -85,6 +89,7 @@
     {
       "name": "中臣鎌足",
       "kana": "なかとみのかまたり",
+      "lifespan": "614～669",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -103,6 +108,7 @@
     {
       "name": "聖武天皇",
       "kana": "しょうむてんのう",
+      "lifespan": "701～756",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -121,6 +127,7 @@
     {
       "name": "行基",
       "kana": "ぎょうき",
+      "lifespan": "668～749",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "religion",
@@ -139,6 +146,7 @@
     {
       "name": "鑑真",
       "kana": "がんじん",
+      "lifespan": "688～763",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "religion",
@@ -157,6 +165,7 @@
     {
       "name": "早良親王",
       "kana": "さわらしんのう",
+      "lifespan": "750～785",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -177,6 +186,7 @@
     {
       "name": "桓武天皇",
       "kana": "かんむてんのう",
+      "lifespan": "737～806",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -195,6 +205,7 @@
     {
       "name": "空海",
       "kana": "くうかい",
+      "lifespan": "774～835",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "religion",
@@ -213,6 +224,7 @@
     {
       "name": "最澄",
       "kana": "さいちょう",
+      "lifespan": "767～822",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "religion",
@@ -231,6 +243,7 @@
     {
       "name": "紫式部",
       "kana": "むらさきしきぶ",
+      "lifespan": "?～?",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "culture",
@@ -249,6 +262,7 @@
     {
       "name": "清少納言",
       "kana": "せいしょうなごん",
+      "lifespan": "?～?",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "culture",
@@ -267,6 +281,7 @@
     {
       "name": "藤原道長",
       "kana": "ふじわらのみちなが",
+      "lifespan": "966～1028",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -285,6 +300,7 @@
     {
       "name": "菅原道真",
       "kana": "すがわらのみちざね",
+      "lifespan": "845～903",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -302,6 +318,7 @@
     {
       "name": "平清盛",
       "kana": "たいらのきよもり",
+      "lifespan": "1118～1181",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -320,6 +337,7 @@
     {
       "name": "崇徳上皇",
       "kana": "すとくじょうこう",
+      "lifespan": "1119～1164",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -337,6 +355,7 @@
     {
       "name": "後白河上皇",
       "kana": "ごしらかわじょうこう",
+      "lifespan": "1127～1192",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -358,6 +377,7 @@
     {
       "name": "源頼朝",
       "kana": "みなもとのよりとも",
+      "lifespan": "1147～1199",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -376,6 +396,7 @@
     {
       "name": "北条政子",
       "kana": "ほうじょうまさこ",
+      "lifespan": "1157～1225",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -394,6 +415,7 @@
     {
       "name": "後鳥羽上皇",
       "kana": "ごとばじょうこう",
+      "lifespan": "1180～1239",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "politics",
@@ -414,6 +436,7 @@
     {
       "name": "北条義時",
       "kana": "ほうじょうよしとき",
+      "lifespan": "1163～1224",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "politics",
@@ -432,6 +455,7 @@
     {
       "name": "北条時宗",
       "kana": "ほうじょうときむね",
+      "lifespan": "1251～1284",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -450,6 +474,7 @@
     {
       "name": "足利尊氏",
       "kana": "あしかがたかうじ",
+      "lifespan": "1305～1358",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -468,6 +493,7 @@
     {
       "name": "足利義満",
       "kana": "あしかがよしみつ",
+      "lifespan": "1358～1408",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -486,6 +512,7 @@
     {
       "name": "世阿弥",
       "kana": "ぜあみ",
+      "lifespan": "?～?",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -504,6 +531,7 @@
     {
       "name": "雪舟",
       "kana": "せっしゅう",
+      "lifespan": "1420～1506",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "religion",
@@ -522,6 +550,7 @@
     {
       "name": "織田信長",
       "kana": "おだのぶなが",
+      "lifespan": "1534～1582",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -540,6 +569,7 @@
     {
       "name": "豊臣秀吉",
       "kana": "とよとみひでよし",
+      "lifespan": "1537～1598",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -562,6 +592,7 @@
     {
       "name": "徳川家康",
       "kana": "とくがわいえやす",
+      "lifespan": "1543～1616",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -580,6 +611,7 @@
     {
       "name": "伊奈忠次",
       "kana": "いなただつぐ",
+      "lifespan": "1550～1610",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -597,6 +629,7 @@
     {
       "name": "徳川吉宗",
       "kana": "とくがわよしむね",
+      "lifespan": "1684～1751",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -615,6 +648,7 @@
     {
       "name": "杉田玄白",
       "kana": "すぎたげんぱく",
+      "lifespan": "1733～1817",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "study",
@@ -633,6 +667,7 @@
     {
       "name": "伊能忠敬",
       "kana": "いのうただたか",
+      "lifespan": "1745～1818",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "industry",
@@ -651,6 +686,7 @@
     {
       "name": "葛飾北斎",
       "kana": "かつしかほくさい",
+      "lifespan": "1760～1849",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -669,6 +705,7 @@
     {
       "name": "坂本龍馬",
       "kana": "さかもとりょうま",
+      "lifespan": "1836～1867",
       "era": "幕末",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -687,6 +724,7 @@
     {
       "name": "西郷隆盛",
       "kana": "さいごうたかもり",
+      "lifespan": "1828～1877",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -708,6 +746,7 @@
     {
       "name": "大久保利通",
       "kana": "おおくぼとしみち",
+      "lifespan": "1830～1878",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -726,6 +765,7 @@
     {
       "name": "木戸孝允",
       "kana": "きどたかよし",
+      "lifespan": "1833～1877",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -747,6 +787,7 @@
     {
       "name": "福沢諭吉",
       "kana": "ふくざわゆきち",
+      "lifespan": "1835～1901",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -765,6 +806,7 @@
     {
       "name": "津田梅子",
       "kana": "つだうめこ",
+      "lifespan": "1864～1929",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -783,6 +825,7 @@
     {
       "name": "渋沢栄一",
       "kana": "しぶさわえいいち",
+      "lifespan": "1840～1931",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "industry",
@@ -801,6 +844,7 @@
     {
       "name": "野口英世",
       "kana": "のぐちひでよ",
+      "lifespan": "1876～1928",
       "era": "明治・大正",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -822,6 +866,7 @@
     {
       "name": "平塚らいてう",
       "kana": "ひらつからいちょう",
+      "lifespan": "1886～1971",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -843,6 +888,7 @@
     {
       "name": "与謝野晶子",
       "kana": "よさのあきこ",
+      "lifespan": "1878～1942",
       "era": "明治・大正",
       "primaryEraId": "meiji",
       "genre": "culture",
@@ -864,6 +910,7 @@
     {
       "name": "北里柴三郎",
       "kana": "きたさとしばさぶろう",
+      "lifespan": "1853～1931",
       "era": "明治・大正",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -882,6 +929,7 @@
     {
       "name": "吉田茂",
       "kana": "よしだしげる",
+      "lifespan": "1878～1967",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -900,6 +948,7 @@
     {
       "name": "湯川秀樹",
       "kana": "ゆかわひでき",
+      "lifespan": "1907～1981",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "study",
@@ -918,6 +967,7 @@
     {
       "name": "手塚治虫",
       "kana": "てづかおさむ",
+      "lifespan": "1928～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -936,6 +986,7 @@
     {
       "name": "黒澤明",
       "kana": "くろさわあきら",
+      "lifespan": "1910～1998",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -954,6 +1005,7 @@
     {
       "name": "向井千秋",
       "kana": "むかいちあき",
+      "lifespan": "1952～?",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -972,6 +1024,7 @@
     {
       "name": "山中伸弥",
       "kana": "やまなかしんや",
+      "lifespan": "1962～?",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -990,6 +1043,7 @@
     {
       "name": "坂上田村麻呂",
       "kana": "さかのうえのたむらまろ",
+      "lifespan": "757～810",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -1008,6 +1062,7 @@
     {
       "name": "平将門",
       "kana": "たいらのまさかど",
+      "lifespan": "?～940",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -1026,6 +1081,7 @@
     {
       "name": "藤原純友",
       "kana": "ふじわらのすみとも",
+      "lifespan": "?～941",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -1044,6 +1100,7 @@
     {
       "name": "北条泰時",
       "kana": "ほうじょうやすとき",
+      "lifespan": "1183～1242",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -1062,6 +1119,7 @@
     {
       "name": "足利義政",
       "kana": "あしかがよしまさ",
+      "lifespan": "1436～1490",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -1080,6 +1138,7 @@
     {
       "name": "明智光秀",
       "kana": "あけちみつひで",
+      "lifespan": "1528～1582",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -1098,6 +1157,7 @@
     {
       "name": "徳川慶喜",
       "kana": "とくがわよしのぶ",
+      "lifespan": "1837～1913",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -1116,6 +1176,7 @@
     {
       "name": "ペリー",
       "kana": "ぺりー",
+      "lifespan": "1794～1858",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -1131,6 +1192,7 @@
     {
       "name": "伊藤博文",
       "kana": "いとうひろぶみ",
+      "lifespan": "1841～1909",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -1152,6 +1214,7 @@
     {
       "name": "蘇我馬子",
       "kana": "そがのうまこ",
+      "lifespan": "?～626",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -1170,6 +1233,7 @@
     {
       "name": "小野妹子",
       "kana": "おののいもこ",
+      "lifespan": "?～?",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -1188,6 +1252,7 @@
     {
       "name": "天武天皇",
       "kana": "てんむてんのう",
+      "lifespan": "?～686",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -1209,6 +1274,7 @@
     {
       "name": "持統天皇",
       "kana": "じとうてんのう",
+      "lifespan": "645～703",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -1227,6 +1293,7 @@
     {
       "name": "藤原不比等",
       "kana": "ふじわらのふひと",
+      "lifespan": "659～720",
       "era": "飛鳥・奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -1245,6 +1312,7 @@
     {
       "name": "元明天皇",
       "kana": "げんめいてんのう",
+      "lifespan": "661～721",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -1263,6 +1331,7 @@
     {
       "name": "光明皇后",
       "kana": "こうみょうこうごう",
+      "lifespan": "701～760",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "religion",
@@ -1281,6 +1350,7 @@
     {
       "name": "阿倍仲麻呂",
       "kana": "あべのなかまろ",
+      "lifespan": "698～770",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "culture",
@@ -1299,6 +1369,7 @@
     {
       "name": "吉備真備",
       "kana": "きびのまきび",
+      "lifespan": "695～775",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -1317,6 +1388,7 @@
     {
       "name": "山上憶良",
       "kana": "やまのうえのおくら",
+      "lifespan": "660～733",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "culture",
@@ -1335,6 +1407,7 @@
     {
       "name": "大伴家持",
       "kana": "おおとものやかもち",
+      "lifespan": "?～785",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "culture",
@@ -1353,6 +1426,7 @@
     {
       "name": "和気清麻呂",
       "kana": "わけのきよまろ",
+      "lifespan": "733～799",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -1371,6 +1445,7 @@
     {
       "name": "道鏡",
       "kana": "どうきょう",
+      "lifespan": "?～772",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -1389,6 +1464,7 @@
     {
       "name": "武田信玄",
       "kana": "たけだしんげん",
+      "lifespan": "1521～1573",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1409,6 +1485,7 @@
     {
       "name": "上杉謙信",
       "kana": "うえすぎけんしん",
+      "lifespan": "1530～1578",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1432,6 +1509,7 @@
     {
       "name": "毛利元就",
       "kana": "もうりもとなり",
+      "lifespan": "1497～1571",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1450,6 +1528,7 @@
     {
       "name": "伊達政宗",
       "kana": "だてまさむね",
+      "lifespan": "1567～1636",
       "era": "安土桃山・江戸時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -1468,6 +1547,7 @@
     {
       "name": "今川義元",
       "kana": "いまがわよしもと",
+      "lifespan": "1519～1560",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1486,6 +1566,7 @@
     {
       "name": "北条早雲",
       "kana": "ほうじょうそううん",
+      "lifespan": "1432～1519",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1512,6 +1593,7 @@
     {
       "name": "北条氏綱",
       "kana": "ほうじょううじつな",
+      "lifespan": "1487～1541",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1534,6 +1616,7 @@
     {
       "name": "北条氏康",
       "kana": "ほうじょううじやす",
+      "lifespan": "1515～1571",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "politics",
@@ -1555,6 +1638,7 @@
     {
       "name": "北条氏政",
       "kana": "ほうじょううじまさ",
+      "lifespan": "1538～1590",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1577,6 +1661,7 @@
     {
       "name": "斎藤道三",
       "kana": "さいとうどうさん",
+      "lifespan": "1494～1556",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1595,6 +1680,7 @@
     {
       "name": "浅井長政",
       "kana": "あざいながまさ",
+      "lifespan": "1545～1573",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1613,6 +1699,7 @@
     {
       "name": "長宗我部元親",
       "kana": "ちょうそかべもとちか",
+      "lifespan": "1539～1599",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1631,6 +1718,7 @@
     {
       "name": "島津義弘",
       "kana": "しまづよしひろ",
+      "lifespan": "1535～1619",
       "era": "戦国・安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -1649,6 +1737,7 @@
     {
       "name": "大友宗麟",
       "kana": "おおともそうりん",
+      "lifespan": "1530～1587",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1667,6 +1756,7 @@
     {
       "name": "千利休",
       "kana": "せんのりきゅう",
+      "lifespan": "1522～1591",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "culture",
@@ -1688,6 +1778,7 @@
     {
       "name": "狩野永徳",
       "kana": "かのうえいとく",
+      "lifespan": "1543～1590",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "culture",
@@ -1706,6 +1797,7 @@
     {
       "name": "出雲阿国",
       "kana": "いずものおくに",
+      "lifespan": "?～?",
       "era": "安土桃山・江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -1724,6 +1816,7 @@
     {
       "name": "細川ガラシャ",
       "kana": "ほそかわがらしゃ",
+      "lifespan": "1563～1600",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -1746,6 +1839,7 @@
     {
       "name": "真田昌幸",
       "kana": "さなだまさゆき",
+      "lifespan": "1547～1611",
       "era": "戦国・安土桃山時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -1764,6 +1858,7 @@
     {
       "name": "真田幸村",
       "kana": "さなだゆきむら",
+      "lifespan": "1567～1615",
       "era": "安土桃山・江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -1785,6 +1880,7 @@
     {
       "name": "朝永振一郎",
       "kana": "ともながしんいちろう",
+      "lifespan": "1906～1979",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "study",
@@ -1803,6 +1899,7 @@
     {
       "name": "佐藤栄作",
       "kana": "さとうえいさく",
+      "lifespan": "1901～1975",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -1821,6 +1918,7 @@
     {
       "name": "本田宗一郎",
       "kana": "ほんだそういちろう",
+      "lifespan": "1906～1991",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "industry",
@@ -1839,6 +1937,7 @@
     {
       "name": "松下幸之助",
       "kana": "まつしたこうのすけ",
+      "lifespan": "1894～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "industry",
@@ -1857,6 +1956,7 @@
     {
       "name": "岡本太郎",
       "kana": "おかもとたろう",
+      "lifespan": "1911～1996",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -1875,6 +1975,7 @@
     {
       "name": "田中角栄",
       "kana": "たなかかくえい",
+      "lifespan": "1918～1993",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -1893,6 +1994,7 @@
     {
       "name": "中村哲",
       "kana": "なかむらてつ",
+      "lifespan": "1946～2019",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -1911,6 +2013,7 @@
     {
       "name": "毛利衛",
       "kana": "もうりまもる",
+      "lifespan": "1948～?",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -1929,6 +2032,7 @@
     {
       "name": "若田光一",
       "kana": "わかたこういち",
+      "lifespan": "1963～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -1944,6 +2048,7 @@
     {
       "name": "大隅良典",
       "kana": "おおすみよしのり",
+      "lifespan": "1945～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -1959,6 +2064,7 @@
     {
       "name": "本庶佑",
       "kana": "ほんじょたすく",
+      "lifespan": "1942～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -1974,6 +2080,7 @@
     {
       "name": "吉野彰",
       "kana": "よしのあきら",
+      "lifespan": "1948～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -1989,6 +2096,7 @@
     {
       "name": "美空ひばり",
       "kana": "みそらひばり",
+      "lifespan": "1937～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -2007,6 +2115,7 @@
     {
       "name": "長嶋茂雄",
       "kana": "ながしましげお",
+      "lifespan": "1936～2025",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "sports",
@@ -2025,6 +2134,7 @@
     {
       "name": "王貞治",
       "kana": "おうさだはる",
+      "lifespan": "1940～?",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "sports",
@@ -2043,6 +2153,7 @@
     {
       "name": "植村直己",
       "kana": "うえむらなおみ",
+      "lifespan": "1941～1984",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "industry",
@@ -2061,6 +2172,7 @@
     {
       "name": "藤井聡太",
       "kana": "ふじいそうた",
+      "lifespan": "2002～?",
       "era": "平成・令和",
       "primaryEraId": "reiwa",
       "genre": "culture",
@@ -2076,6 +2188,7 @@
     {
       "name": "大谷翔平",
       "kana": "おおたにしょうへい",
+      "lifespan": "1994～?",
       "era": "平成・令和",
       "primaryEraId": "reiwa",
       "genre": "sports",
@@ -2091,6 +2204,7 @@
     {
       "name": "池江璃花子",
       "kana": "いけえりかこ",
+      "lifespan": "2000～?",
       "era": "平成・令和",
       "primaryEraId": "reiwa",
       "genre": "sports",
@@ -2106,6 +2220,7 @@
     {
       "name": "物部守屋",
       "kana": "もののべのもりや",
+      "lifespan": "?～587",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "religion",
@@ -2124,6 +2239,7 @@
     {
       "name": "蘇我入鹿",
       "kana": "そがのいるか",
+      "lifespan": "?～645",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -2139,6 +2255,7 @@
     {
       "name": "大友皇子",
       "kana": "おおとものおうじ",
+      "lifespan": "648～672",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -2160,6 +2277,7 @@
     {
       "name": "藤原頼通",
       "kana": "ふじわらのよりみち",
+      "lifespan": "992～1074",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -2178,6 +2296,7 @@
     {
       "name": "白河上皇",
       "kana": "しらかわじょうこう",
+      "lifespan": "1053～1129",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -2196,6 +2315,7 @@
     {
       "name": "源義経",
       "kana": "みなもとのよしつね",
+      "lifespan": "1159～1189",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -2213,6 +2333,7 @@
     {
       "name": "法然",
       "kana": "ほうねん",
+      "lifespan": "1133～1212",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -2231,6 +2352,7 @@
     {
       "name": "親鸞",
       "kana": "しんらん",
+      "lifespan": "1173～1263",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -2249,6 +2371,7 @@
     {
       "name": "日蓮",
       "kana": "にちれん",
+      "lifespan": "1222～1282",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -2267,6 +2390,7 @@
     {
       "name": "一遍",
       "kana": "いっぺん",
+      "lifespan": "1239～1289",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -2285,6 +2409,7 @@
     {
       "name": "栄西",
       "kana": "えいさい",
+      "lifespan": "1141～1215",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -2303,6 +2428,7 @@
     {
       "name": "道元",
       "kana": "どうげん",
+      "lifespan": "1200～1253",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -2321,6 +2447,7 @@
     {
       "name": "後醍醐天皇",
       "kana": "ごだいごてんのう",
+      "lifespan": "1288～1339",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "politics",
@@ -2339,6 +2466,7 @@
     {
       "name": "新田義貞",
       "kana": "にったよしさだ",
+      "lifespan": "1301～1338",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -2357,6 +2485,7 @@
     {
       "name": "楠木正成",
       "kana": "くすのきまさしげ",
+      "lifespan": "?～1336",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -2377,6 +2506,7 @@
     {
       "name": "細川勝元",
       "kana": "ほそかわかつもと",
+      "lifespan": "1430～1473",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -2395,6 +2525,7 @@
     {
       "name": "山名宗全",
       "kana": "やまなそうぜん",
+      "lifespan": "1404～1473",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -2413,6 +2544,7 @@
     {
       "name": "フランシスコ・ザビエル",
       "kana": "ふらんしすこざびえる",
+      "lifespan": "1506～1552",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "religion",
@@ -2431,6 +2563,7 @@
     {
       "name": "顕如",
       "kana": "けんにょ",
+      "lifespan": "1543～1592",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "religion",
@@ -2452,6 +2585,7 @@
     {
       "name": "武田勝頼",
       "kana": "たけだかつより",
+      "lifespan": "1546～1582",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -2470,6 +2604,7 @@
     {
       "name": "石田三成",
       "kana": "いしだみつなり",
+      "lifespan": "1560～1600",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -2488,6 +2623,7 @@
     {
       "name": "小早川秀秋",
       "kana": "こばやかわひであき",
+      "lifespan": "1582～1602",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -2506,6 +2642,7 @@
     {
       "name": "徳川家光",
       "kana": "とくがわいえみつ",
+      "lifespan": "1604～1651",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2524,6 +2661,7 @@
     {
       "name": "天草四郎",
       "kana": "あまくさしろう",
+      "lifespan": "1621～1638",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2543,6 +2681,7 @@
     {
       "name": "松尾芭蕉",
       "kana": "まつおばしょう",
+      "lifespan": "1644～1694",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -2564,6 +2703,7 @@
     {
       "name": "歌川広重",
       "kana": "うたがわひろしげ",
+      "lifespan": "1797～1858",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -2585,6 +2725,7 @@
     {
       "name": "タウンゼント・ハリス",
       "kana": "たうんぜんとはりす",
+      "lifespan": "1804～1878",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "industry",
@@ -2603,6 +2744,7 @@
     {
       "name": "井伊直弼",
       "kana": "いいなおすけ",
+      "lifespan": "1815～1860",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2620,6 +2762,7 @@
     {
       "name": "近藤勇",
       "kana": "こんどういさみ",
+      "lifespan": "1834～1868",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2638,6 +2781,7 @@
     {
       "name": "土方歳三",
       "kana": "ひじかたとしぞう",
+      "lifespan": "1835～1869",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -2656,6 +2800,7 @@
     {
       "name": "三条実美",
       "kana": "さんじょうさねとみ",
+      "lifespan": "1837～1891",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -2674,6 +2819,7 @@
     {
       "name": "高杉晋作",
       "kana": "たかすぎしんさく",
+      "lifespan": "1839～1867",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -2695,6 +2841,7 @@
     {
       "name": "徳川家茂",
       "kana": "とくがわいえもち",
+      "lifespan": "1846～1866",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2713,6 +2860,7 @@
     {
       "name": "中岡慎太郎",
       "kana": "なかおかしんたろう",
+      "lifespan": "1838～1867",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "other",
@@ -2731,6 +2879,7 @@
     {
       "name": "榎本武揚",
       "kana": "えのもとたけあき",
+      "lifespan": "1836～1908",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2749,6 +2898,7 @@
     {
       "name": "明治天皇",
       "kana": "めいじてんのう",
+      "lifespan": "1852～1912",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -2770,6 +2920,7 @@
     {
       "name": "板垣退助",
       "kana": "いたがきたいすけ",
+      "lifespan": "1837～1919",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -2788,6 +2939,7 @@
     {
       "name": "大隈重信",
       "kana": "おおくましげのぶ",
+      "lifespan": "1838～1922",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -2806,6 +2958,7 @@
     {
       "name": "小村寿太郎",
       "kana": "こむらじゅたろう",
+      "lifespan": "1855～1911",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "samurai",
@@ -2824,6 +2977,7 @@
     {
       "name": "東郷平八郎",
       "kana": "とうごうへいはちろう",
+      "lifespan": "1848～1934",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "samurai",
@@ -2842,6 +2996,7 @@
     {
       "name": "陸奥宗光",
       "kana": "むつむねみつ",
+      "lifespan": "1844～1897",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -2860,6 +3015,7 @@
     {
       "name": "寺内正毅",
       "kana": "てらうちまさたけ",
+      "lifespan": "1852～1919",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -2878,6 +3034,7 @@
     {
       "name": "原敬",
       "kana": "はらたかし",
+      "lifespan": "1856～1921",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -2896,6 +3053,7 @@
     {
       "name": "吉野作造",
       "kana": "よしのさくぞう",
+      "lifespan": "1878～1933",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -2914,6 +3072,7 @@
     {
       "name": "溥儀",
       "kana": "ふぎ",
+      "lifespan": "1906～1967",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -2935,6 +3094,7 @@
     {
       "name": "昭和天皇",
       "kana": "しょうわてんのう",
+      "lifespan": "1901～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -2956,6 +3116,7 @@
     {
       "name": "ダグラス・マッカーサー",
       "kana": "だぐらすまっかーさー",
+      "lifespan": "1880～1964",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -2974,6 +3135,7 @@
     {
       "name": "勝海舟",
       "kana": "かつかいしゅう",
+      "lifespan": "1823～1899",
       "era": "幕末",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -2996,6 +3158,7 @@
     {
       "name": "吉田松陰",
       "kana": "よしだしょういん",
+      "lifespan": "1830～1859",
       "era": "幕末",
       "primaryEraId": "edo",
       "genre": "religion",
@@ -3014,6 +3177,7 @@
     {
       "name": "大川周明",
       "kana": "おおかわしゅうめい",
+      "lifespan": "1886～1957",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "religion",
@@ -3031,6 +3195,7 @@
     {
       "name": "東条英機",
       "kana": "とうじょうひでき",
+      "lifespan": "1884～1948",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -3048,6 +3213,7 @@
     {
       "name": "張学良",
       "kana": "ちょうがくりょう",
+      "lifespan": "1901～2001",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -3065,6 +3231,7 @@
     {
       "name": "石原莞爾",
       "kana": "いしわらかんじ",
+      "lifespan": "1889～1949",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -3082,6 +3249,7 @@
     {
       "name": "山本五十六",
       "kana": "やまもといそろく",
+      "lifespan": "1884～1943",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -3099,6 +3267,7 @@
     {
       "name": "栗林忠道",
       "kana": "くりばやしただみち",
+      "lifespan": "1891～1945",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -3116,6 +3285,7 @@
     {
       "name": "南雲忠一",
       "kana": "なぐもちゅういち",
+      "lifespan": "1887～1944",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -3133,6 +3303,7 @@
     {
       "name": "近衛文麿",
       "kana": "このえふみまろ",
+      "lifespan": "1891～1945",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -3150,6 +3321,7 @@
     {
       "name": "松岡洋右",
       "kana": "まつおかようすけ",
+      "lifespan": "1880～1946",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -3167,6 +3339,7 @@
     {
       "name": "木戸幸一",
       "kana": "きどこういち",
+      "lifespan": "1889～1977",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -3184,6 +3357,7 @@
     {
       "name": "鈴木貫太郎",
       "kana": "すずきかんたろう",
+      "lifespan": "1868～1948",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -3201,6 +3375,7 @@
     {
       "name": "犬養毅",
       "kana": "いぬかいつよし",
+      "lifespan": "1855～1932",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -3218,6 +3393,7 @@
     "卑弥呼": {
       "name": "卑弥呼",
       "kana": "ひみこ",
+      "lifespan": "?～?",
       "era": "弥生時代",
       "primaryEraId": "yayoi",
       "genre": "politics",
@@ -3236,6 +3412,7 @@
     "聖徳太子": {
       "name": "聖徳太子",
       "kana": "しょうとくたいし",
+      "lifespan": "574～622",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -3258,6 +3435,7 @@
     "推古天皇": {
       "name": "推古天皇",
       "kana": "すいこてんのう",
+      "lifespan": "554～628",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -3276,6 +3454,7 @@
     "中大兄皇子（天智天皇）": {
       "name": "中大兄皇子（天智天皇）",
       "kana": "なかのおおえのおうじ（てんじてんのう）",
+      "lifespan": "626～672",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -3299,6 +3478,7 @@
     "中臣鎌足": {
       "name": "中臣鎌足",
       "kana": "なかとみのかまたり",
+      "lifespan": "614～669",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -3317,6 +3497,7 @@
     "聖武天皇": {
       "name": "聖武天皇",
       "kana": "しょうむてんのう",
+      "lifespan": "701～756",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -3335,6 +3516,7 @@
     "行基": {
       "name": "行基",
       "kana": "ぎょうき",
+      "lifespan": "668～749",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "religion",
@@ -3353,6 +3535,7 @@
     "鑑真": {
       "name": "鑑真",
       "kana": "がんじん",
+      "lifespan": "688～763",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "religion",
@@ -3371,6 +3554,7 @@
     "早良親王": {
       "name": "早良親王",
       "kana": "さわらしんのう",
+      "lifespan": "750～785",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -3391,6 +3575,7 @@
     "桓武天皇": {
       "name": "桓武天皇",
       "kana": "かんむてんのう",
+      "lifespan": "737～806",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -3409,6 +3594,7 @@
     "空海": {
       "name": "空海",
       "kana": "くうかい",
+      "lifespan": "774～835",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "religion",
@@ -3427,6 +3613,7 @@
     "最澄": {
       "name": "最澄",
       "kana": "さいちょう",
+      "lifespan": "767～822",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "religion",
@@ -3445,6 +3632,7 @@
     "紫式部": {
       "name": "紫式部",
       "kana": "むらさきしきぶ",
+      "lifespan": "?～?",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "culture",
@@ -3463,6 +3651,7 @@
     "清少納言": {
       "name": "清少納言",
       "kana": "せいしょうなごん",
+      "lifespan": "?～?",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "culture",
@@ -3481,6 +3670,7 @@
     "藤原道長": {
       "name": "藤原道長",
       "kana": "ふじわらのみちなが",
+      "lifespan": "966～1028",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -3499,6 +3689,7 @@
     "菅原道真": {
       "name": "菅原道真",
       "kana": "すがわらのみちざね",
+      "lifespan": "845～903",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -3517,6 +3708,7 @@
     "平清盛": {
       "name": "平清盛",
       "kana": "たいらのきよもり",
+      "lifespan": "1118～1181",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -3535,6 +3727,7 @@
     "源頼朝": {
       "name": "源頼朝",
       "kana": "みなもとのよりとも",
+      "lifespan": "1147～1199",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -3553,6 +3746,7 @@
     "北条政子": {
       "name": "北条政子",
       "kana": "ほうじょうまさこ",
+      "lifespan": "1157～1225",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -3571,6 +3765,7 @@
     "北条義時": {
       "name": "北条義時",
       "kana": "ほうじょうよしとき",
+      "lifespan": "1163～1224",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "politics",
@@ -3590,6 +3785,7 @@
     "北条時宗": {
       "name": "北条時宗",
       "kana": "ほうじょうときむね",
+      "lifespan": "1251～1284",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -3608,6 +3804,7 @@
     "足利尊氏": {
       "name": "足利尊氏",
       "kana": "あしかがたかうじ",
+      "lifespan": "1305～1358",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -3626,6 +3823,7 @@
     "足利義満": {
       "name": "足利義満",
       "kana": "あしかがよしみつ",
+      "lifespan": "1358～1408",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -3644,6 +3842,7 @@
     "世阿弥": {
       "name": "世阿弥",
       "kana": "ぜあみ",
+      "lifespan": "?～?",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -3662,6 +3861,7 @@
     "雪舟": {
       "name": "雪舟",
       "kana": "せっしゅう",
+      "lifespan": "1420～1506",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "religion",
@@ -3680,6 +3880,7 @@
     "織田信長": {
       "name": "織田信長",
       "kana": "おだのぶなが",
+      "lifespan": "1534～1582",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -3698,6 +3899,7 @@
     "豊臣秀吉": {
       "name": "豊臣秀吉",
       "kana": "とよとみひでよし",
+      "lifespan": "1537～1598",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -3720,6 +3922,7 @@
     "徳川家康": {
       "name": "徳川家康",
       "kana": "とくがわいえやす",
+      "lifespan": "1543～1616",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -3738,6 +3941,7 @@
     "伊奈忠次": {
       "name": "伊奈忠次",
       "kana": "いなただつぐ",
+      "lifespan": "1550～1610",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -3755,6 +3959,7 @@
     "徳川吉宗": {
       "name": "徳川吉宗",
       "kana": "とくがわよしむね",
+      "lifespan": "1684～1751",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -3773,6 +3978,7 @@
     "杉田玄白": {
       "name": "杉田玄白",
       "kana": "すぎたげんぱく",
+      "lifespan": "1733～1817",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "study",
@@ -3791,6 +3997,7 @@
     "伊能忠敬": {
       "name": "伊能忠敬",
       "kana": "いのうただたか",
+      "lifespan": "1745～1818",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "industry",
@@ -3809,6 +4016,7 @@
     "葛飾北斎": {
       "name": "葛飾北斎",
       "kana": "かつしかほくさい",
+      "lifespan": "1760～1849",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -3827,6 +4035,7 @@
     "坂本龍馬": {
       "name": "坂本龍馬",
       "kana": "さかもとりょうま",
+      "lifespan": "1836～1867",
       "era": "幕末",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -3845,6 +4054,7 @@
     "西郷隆盛": {
       "name": "西郷隆盛",
       "kana": "さいごうたかもり",
+      "lifespan": "1828～1877",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -3866,6 +4076,7 @@
     "大久保利通": {
       "name": "大久保利通",
       "kana": "おおくぼとしみち",
+      "lifespan": "1830～1878",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -3884,6 +4095,7 @@
     "木戸孝允": {
       "name": "木戸孝允",
       "kana": "きどたかよし",
+      "lifespan": "1833～1877",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -3905,6 +4117,7 @@
     "福沢諭吉": {
       "name": "福沢諭吉",
       "kana": "ふくざわゆきち",
+      "lifespan": "1835～1901",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -3923,6 +4136,7 @@
     "津田梅子": {
       "name": "津田梅子",
       "kana": "つだうめこ",
+      "lifespan": "1864～1929",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -3941,6 +4155,7 @@
     "渋沢栄一": {
       "name": "渋沢栄一",
       "kana": "しぶさわえいいち",
+      "lifespan": "1840～1931",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "industry",
@@ -3959,6 +4174,7 @@
     "野口英世": {
       "name": "野口英世",
       "kana": "のぐちひでよ",
+      "lifespan": "1876～1928",
       "era": "明治・大正",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -3980,6 +4196,7 @@
     "平塚らいてう": {
       "name": "平塚らいてう",
       "kana": "ひらつからいちょう",
+      "lifespan": "1886～1971",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -4001,6 +4218,7 @@
     "与謝野晶子": {
       "name": "与謝野晶子",
       "kana": "よさのあきこ",
+      "lifespan": "1878～1942",
       "era": "明治・大正",
       "primaryEraId": "meiji",
       "genre": "culture",
@@ -4022,6 +4240,7 @@
     "北里柴三郎": {
       "name": "北里柴三郎",
       "kana": "きたさとしばさぶろう",
+      "lifespan": "1853～1931",
       "era": "明治・大正",
       "primaryEraId": "meiji",
       "genre": "study",
@@ -4040,6 +4259,7 @@
     "吉田茂": {
       "name": "吉田茂",
       "kana": "よしだしげる",
+      "lifespan": "1878～1967",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -4058,6 +4278,7 @@
     "湯川秀樹": {
       "name": "湯川秀樹",
       "kana": "ゆかわひでき",
+      "lifespan": "1907～1981",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "study",
@@ -4076,6 +4297,7 @@
     "手塚治虫": {
       "name": "手塚治虫",
       "kana": "てづかおさむ",
+      "lifespan": "1928～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -4094,6 +4316,7 @@
     "黒澤明": {
       "name": "黒澤明",
       "kana": "くろさわあきら",
+      "lifespan": "1910～1998",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -4112,6 +4335,7 @@
     "向井千秋": {
       "name": "向井千秋",
       "kana": "むかいちあき",
+      "lifespan": "1952～?",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -4130,6 +4354,7 @@
     "山中伸弥": {
       "name": "山中伸弥",
       "kana": "やまなかしんや",
+      "lifespan": "1962～?",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -4148,6 +4373,7 @@
     "坂上田村麻呂": {
       "name": "坂上田村麻呂",
       "kana": "さかのうえのたむらまろ",
+      "lifespan": "757～810",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -4166,6 +4392,7 @@
     "平将門": {
       "name": "平将門",
       "kana": "たいらのまさかど",
+      "lifespan": "?～940",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -4184,6 +4411,7 @@
     "藤原純友": {
       "name": "藤原純友",
       "kana": "ふじわらのすみとも",
+      "lifespan": "?～941",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -4202,6 +4430,7 @@
     "北条泰時": {
       "name": "北条泰時",
       "kana": "ほうじょうやすとき",
+      "lifespan": "1183～1242",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "samurai",
@@ -4220,6 +4449,7 @@
     "足利義政": {
       "name": "足利義政",
       "kana": "あしかがよしまさ",
+      "lifespan": "1436～1490",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -4238,6 +4468,7 @@
     "明智光秀": {
       "name": "明智光秀",
       "kana": "あけちみつひで",
+      "lifespan": "1528～1582",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -4256,6 +4487,7 @@
     "徳川慶喜": {
       "name": "徳川慶喜",
       "kana": "とくがわよしのぶ",
+      "lifespan": "1837～1913",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -4274,6 +4506,7 @@
     "ペリー": {
       "name": "ペリー",
       "kana": "ぺりー",
+      "lifespan": "1794～1858",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -4289,6 +4522,7 @@
     "伊藤博文": {
       "name": "伊藤博文",
       "kana": "いとうひろぶみ",
+      "lifespan": "1841～1909",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -4310,6 +4544,7 @@
     "蘇我馬子": {
       "name": "蘇我馬子",
       "kana": "そがのうまこ",
+      "lifespan": "?～626",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -4328,6 +4563,7 @@
     "小野妹子": {
       "name": "小野妹子",
       "kana": "おののいもこ",
+      "lifespan": "?～?",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -4346,6 +4582,7 @@
     "天武天皇": {
       "name": "天武天皇",
       "kana": "てんむてんのう",
+      "lifespan": "?～686",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -4367,6 +4604,7 @@
     "持統天皇": {
       "name": "持統天皇",
       "kana": "じとうてんのう",
+      "lifespan": "645～703",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -4385,6 +4623,7 @@
     "藤原不比等": {
       "name": "藤原不比等",
       "kana": "ふじわらのふひと",
+      "lifespan": "659～720",
       "era": "飛鳥・奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -4403,6 +4642,7 @@
     "元明天皇": {
       "name": "元明天皇",
       "kana": "げんめいてんのう",
+      "lifespan": "661～721",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -4421,6 +4661,7 @@
     "光明皇后": {
       "name": "光明皇后",
       "kana": "こうみょうこうごう",
+      "lifespan": "701～760",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "religion",
@@ -4439,6 +4680,7 @@
     "阿倍仲麻呂": {
       "name": "阿倍仲麻呂",
       "kana": "あべのなかまろ",
+      "lifespan": "698～770",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "culture",
@@ -4457,6 +4699,7 @@
     "吉備真備": {
       "name": "吉備真備",
       "kana": "きびのまきび",
+      "lifespan": "695～775",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -4475,6 +4718,7 @@
     "山上憶良": {
       "name": "山上憶良",
       "kana": "やまのうえのおくら",
+      "lifespan": "660～733",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "culture",
@@ -4493,6 +4737,7 @@
     "大伴家持": {
       "name": "大伴家持",
       "kana": "おおとものやかもち",
+      "lifespan": "?～785",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "culture",
@@ -4511,6 +4756,7 @@
     "和気清麻呂": {
       "name": "和気清麻呂",
       "kana": "わけのきよまろ",
+      "lifespan": "733～799",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -4529,6 +4775,7 @@
     "道鏡": {
       "name": "道鏡",
       "kana": "どうきょう",
+      "lifespan": "?～772",
       "era": "奈良時代",
       "primaryEraId": "nara",
       "genre": "politics",
@@ -4547,6 +4794,7 @@
     "武田信玄": {
       "name": "武田信玄",
       "kana": "たけだしんげん",
+      "lifespan": "1521～1573",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4567,6 +4815,7 @@
     "上杉謙信": {
       "name": "上杉謙信",
       "kana": "うえすぎけんしん",
+      "lifespan": "1530～1578",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4590,6 +4839,7 @@
     "毛利元就": {
       "name": "毛利元就",
       "kana": "もうりもとなり",
+      "lifespan": "1497～1571",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4608,6 +4858,7 @@
     "伊達政宗": {
       "name": "伊達政宗",
       "kana": "だてまさむね",
+      "lifespan": "1567～1636",
       "era": "安土桃山・江戸時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -4626,6 +4877,7 @@
     "今川義元": {
       "name": "今川義元",
       "kana": "いまがわよしもと",
+      "lifespan": "1519～1560",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4644,6 +4896,7 @@
     "北条早雲": {
       "name": "北条早雲",
       "kana": "ほうじょうそううん",
+      "lifespan": "1432～1519",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4670,6 +4923,7 @@
     "北条氏綱": {
       "name": "北条氏綱",
       "kana": "ほうじょううじつな",
+      "lifespan": "1487～1541",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4692,6 +4946,7 @@
     "北条氏康": {
       "name": "北条氏康",
       "kana": "ほうじょううじやす",
+      "lifespan": "1515～1571",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "politics",
@@ -4714,6 +4969,7 @@
     "北条氏政": {
       "name": "北条氏政",
       "kana": "ほうじょううじまさ",
+      "lifespan": "1538～1590",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4736,6 +4992,7 @@
     "斎藤道三": {
       "name": "斎藤道三",
       "kana": "さいとうどうさん",
+      "lifespan": "1494～1556",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4754,6 +5011,7 @@
     "浅井長政": {
       "name": "浅井長政",
       "kana": "あざいながまさ",
+      "lifespan": "1545～1573",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4772,6 +5030,7 @@
     "長宗我部元親": {
       "name": "長宗我部元親",
       "kana": "ちょうそかべもとちか",
+      "lifespan": "1539～1599",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4790,6 +5049,7 @@
     "島津義弘": {
       "name": "島津義弘",
       "kana": "しまづよしひろ",
+      "lifespan": "1535～1619",
       "era": "戦国・安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -4808,6 +5068,7 @@
     "大友宗麟": {
       "name": "大友宗麟",
       "kana": "おおともそうりん",
+      "lifespan": "1530～1587",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4826,6 +5087,7 @@
     "千利休": {
       "name": "千利休",
       "kana": "せんのりきゅう",
+      "lifespan": "1522～1591",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "culture",
@@ -4847,6 +5109,7 @@
     "狩野永徳": {
       "name": "狩野永徳",
       "kana": "かのうえいとく",
+      "lifespan": "1543～1590",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "culture",
@@ -4865,6 +5128,7 @@
     "出雲阿国": {
       "name": "出雲阿国",
       "kana": "いずものおくに",
+      "lifespan": "?～?",
       "era": "安土桃山・江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -4883,6 +5147,7 @@
     "細川ガラシャ": {
       "name": "細川ガラシャ",
       "kana": "ほそかわがらしゃ",
+      "lifespan": "1563～1600",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -4905,6 +5170,7 @@
     "真田昌幸": {
       "name": "真田昌幸",
       "kana": "さなだまさゆき",
+      "lifespan": "1547～1611",
       "era": "戦国・安土桃山時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -4923,6 +5189,7 @@
     "真田幸村": {
       "name": "真田幸村",
       "kana": "さなだゆきむら",
+      "lifespan": "1567～1615",
       "era": "安土桃山・江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -4944,6 +5211,7 @@
     "朝永振一郎": {
       "name": "朝永振一郎",
       "kana": "ともながしんいちろう",
+      "lifespan": "1906～1979",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "study",
@@ -4962,6 +5230,7 @@
     "佐藤栄作": {
       "name": "佐藤栄作",
       "kana": "さとうえいさく",
+      "lifespan": "1901～1975",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -4980,6 +5249,7 @@
     "本田宗一郎": {
       "name": "本田宗一郎",
       "kana": "ほんだそういちろう",
+      "lifespan": "1906～1991",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "industry",
@@ -4998,6 +5268,7 @@
     "松下幸之助": {
       "name": "松下幸之助",
       "kana": "まつしたこうのすけ",
+      "lifespan": "1894～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "industry",
@@ -5016,6 +5287,7 @@
     "岡本太郎": {
       "name": "岡本太郎",
       "kana": "おかもとたろう",
+      "lifespan": "1911～1996",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -5034,6 +5306,7 @@
     "田中角栄": {
       "name": "田中角栄",
       "kana": "たなかかくえい",
+      "lifespan": "1918～1993",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -5052,6 +5325,7 @@
     "中村哲": {
       "name": "中村哲",
       "kana": "なかむらてつ",
+      "lifespan": "1946～2019",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -5070,6 +5344,7 @@
     "毛利衛": {
       "name": "毛利衛",
       "kana": "もうりまもる",
+      "lifespan": "1948～?",
       "era": "平成時代",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -5088,6 +5363,7 @@
     "若田光一": {
       "name": "若田光一",
       "kana": "わかたこういち",
+      "lifespan": "1963～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -5103,6 +5379,7 @@
     "大隅良典": {
       "name": "大隅良典",
       "kana": "おおすみよしのり",
+      "lifespan": "1945～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -5118,6 +5395,7 @@
     "本庶佑": {
       "name": "本庶佑",
       "kana": "ほんじょたすく",
+      "lifespan": "1942～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -5133,6 +5411,7 @@
     "吉野彰": {
       "name": "吉野彰",
       "kana": "よしのあきら",
+      "lifespan": "1948～?",
       "era": "平成・令和",
       "primaryEraId": "heisei",
       "genre": "study",
@@ -5148,6 +5427,7 @@
     "美空ひばり": {
       "name": "美空ひばり",
       "kana": "みそらひばり",
+      "lifespan": "1937～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "culture",
@@ -5166,6 +5446,7 @@
     "長嶋茂雄": {
       "name": "長嶋茂雄",
       "kana": "ながしましげお",
+      "lifespan": "1936～2025",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "sports",
@@ -5184,6 +5465,7 @@
     "王貞治": {
       "name": "王貞治",
       "kana": "おうさだはる",
+      "lifespan": "1940～?",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "sports",
@@ -5202,6 +5484,7 @@
     "植村直己": {
       "name": "植村直己",
       "kana": "うえむらなおみ",
+      "lifespan": "1941～1984",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "industry",
@@ -5220,6 +5503,7 @@
     "藤井聡太": {
       "name": "藤井聡太",
       "kana": "ふじいそうた",
+      "lifespan": "2002～?",
       "era": "平成・令和",
       "primaryEraId": "reiwa",
       "genre": "culture",
@@ -5235,6 +5519,7 @@
     "大谷翔平": {
       "name": "大谷翔平",
       "kana": "おおたにしょうへい",
+      "lifespan": "1994～?",
       "era": "平成・令和",
       "primaryEraId": "reiwa",
       "genre": "sports",
@@ -5250,6 +5535,7 @@
     "池江璃花子": {
       "name": "池江璃花子",
       "kana": "いけえりかこ",
+      "lifespan": "2000～?",
       "era": "平成・令和",
       "primaryEraId": "reiwa",
       "genre": "sports",
@@ -5265,6 +5551,7 @@
     "物部守屋": {
       "name": "物部守屋",
       "kana": "もののべのもりや",
+      "lifespan": "?～587",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "religion",
@@ -5283,6 +5570,7 @@
     "蘇我入鹿": {
       "name": "蘇我入鹿",
       "kana": "そがのいるか",
+      "lifespan": "?～645",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -5298,6 +5586,7 @@
     "大友皇子": {
       "name": "大友皇子",
       "kana": "おおとものおうじ",
+      "lifespan": "648～672",
       "era": "飛鳥時代",
       "primaryEraId": "asuka",
       "genre": "politics",
@@ -5319,6 +5608,7 @@
     "藤原頼通": {
       "name": "藤原頼通",
       "kana": "ふじわらのよりみち",
+      "lifespan": "992～1074",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -5337,6 +5627,7 @@
     "白河上皇": {
       "name": "白河上皇",
       "kana": "しらかわじょうこう",
+      "lifespan": "1053～1129",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -5355,6 +5646,7 @@
     "源義経": {
       "name": "源義経",
       "kana": "みなもとのよしつね",
+      "lifespan": "1159～1189",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "samurai",
@@ -5370,6 +5662,7 @@
     "法然": {
       "name": "法然",
       "kana": "ほうねん",
+      "lifespan": "1133～1212",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -5388,6 +5681,7 @@
     "親鸞": {
       "name": "親鸞",
       "kana": "しんらん",
+      "lifespan": "1173～1263",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -5406,6 +5700,7 @@
     "日蓮": {
       "name": "日蓮",
       "kana": "にちれん",
+      "lifespan": "1222～1282",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -5424,6 +5719,7 @@
     "一遍": {
       "name": "一遍",
       "kana": "いっぺん",
+      "lifespan": "1239～1289",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -5442,6 +5738,7 @@
     "栄西": {
       "name": "栄西",
       "kana": "えいさい",
+      "lifespan": "1141～1215",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -5460,6 +5757,7 @@
     "道元": {
       "name": "道元",
       "kana": "どうげん",
+      "lifespan": "1200～1253",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "religion",
@@ -5478,6 +5776,7 @@
     "後醍醐天皇": {
       "name": "後醍醐天皇",
       "kana": "ごだいごてんのう",
+      "lifespan": "1288～1339",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "politics",
@@ -5496,6 +5795,7 @@
     "新田義貞": {
       "name": "新田義貞",
       "kana": "にったよしさだ",
+      "lifespan": "1301～1338",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -5514,6 +5814,7 @@
     "楠木正成": {
       "name": "楠木正成",
       "kana": "くすのきまさしげ",
+      "lifespan": "?～1336",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -5532,6 +5833,7 @@
     "細川勝元": {
       "name": "細川勝元",
       "kana": "ほそかわかつもと",
+      "lifespan": "1430～1473",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -5550,6 +5852,7 @@
     "山名宗全": {
       "name": "山名宗全",
       "kana": "やまなそうぜん",
+      "lifespan": "1404～1473",
       "era": "室町時代",
       "primaryEraId": "muromachi",
       "genre": "samurai",
@@ -5568,6 +5871,7 @@
     "フランシスコ・ザビエル": {
       "name": "フランシスコ・ザビエル",
       "kana": "ふらんしすこざびえる",
+      "lifespan": "1506～1552",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "religion",
@@ -5586,6 +5890,7 @@
     "顕如": {
       "name": "顕如",
       "kana": "けんにょ",
+      "lifespan": "1543～1592",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "religion",
@@ -5607,6 +5912,7 @@
     "武田勝頼": {
       "name": "武田勝頼",
       "kana": "たけだかつより",
+      "lifespan": "1546～1582",
       "era": "戦国時代",
       "primaryEraId": "sengoku",
       "genre": "samurai",
@@ -5625,6 +5931,7 @@
     "石田三成": {
       "name": "石田三成",
       "kana": "いしだみつなり",
+      "lifespan": "1560～1600",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -5643,6 +5950,7 @@
     "小早川秀秋": {
       "name": "小早川秀秋",
       "kana": "こばやかわひであき",
+      "lifespan": "1582～1602",
       "era": "安土桃山時代",
       "primaryEraId": "azuchi",
       "genre": "samurai",
@@ -5661,6 +5969,7 @@
     "徳川家光": {
       "name": "徳川家光",
       "kana": "とくがわいえみつ",
+      "lifespan": "1604～1651",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -5679,6 +5988,7 @@
     "天草四郎": {
       "name": "天草四郎",
       "kana": "あまくさしろう",
+      "lifespan": "1621～1638",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -5698,6 +6008,7 @@
     "松尾芭蕉": {
       "name": "松尾芭蕉",
       "kana": "まつおばしょう",
+      "lifespan": "1644～1694",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -5719,6 +6030,7 @@
     "歌川広重": {
       "name": "歌川広重",
       "kana": "うたがわひろしげ",
+      "lifespan": "1797～1858",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "culture",
@@ -5740,6 +6052,7 @@
     "タウンゼント・ハリス": {
       "name": "タウンゼント・ハリス",
       "kana": "たうんぜんとはりす",
+      "lifespan": "1804～1878",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "industry",
@@ -5758,6 +6071,7 @@
     "井伊直弼": {
       "name": "井伊直弼",
       "kana": "いいなおすけ",
+      "lifespan": "1815～1860",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -5775,6 +6089,7 @@
     "近藤勇": {
       "name": "近藤勇",
       "kana": "こんどういさみ",
+      "lifespan": "1834～1868",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -5793,6 +6108,7 @@
     "土方歳三": {
       "name": "土方歳三",
       "kana": "ひじかたとしぞう",
+      "lifespan": "1835～1869",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -5811,6 +6127,7 @@
     "三条実美": {
       "name": "三条実美",
       "kana": "さんじょうさねとみ",
+      "lifespan": "1837～1891",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -5829,6 +6146,7 @@
     "高杉晋作": {
       "name": "高杉晋作",
       "kana": "たかすぎしんさく",
+      "lifespan": "1839～1867",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "politics",
@@ -5850,6 +6168,7 @@
     "徳川家茂": {
       "name": "徳川家茂",
       "kana": "とくがわいえもち",
+      "lifespan": "1846～1866",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -5868,6 +6187,7 @@
     "中岡慎太郎": {
       "name": "中岡慎太郎",
       "kana": "なかおかしんたろう",
+      "lifespan": "1838～1867",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "other",
@@ -5886,6 +6206,7 @@
     "榎本武揚": {
       "name": "榎本武揚",
       "kana": "えのもとたけあき",
+      "lifespan": "1836～1908",
       "era": "江戸時代",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -5904,6 +6225,7 @@
     "明治天皇": {
       "name": "明治天皇",
       "kana": "めいじてんのう",
+      "lifespan": "1852～1912",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -5925,6 +6247,7 @@
     "板垣退助": {
       "name": "板垣退助",
       "kana": "いたがきたいすけ",
+      "lifespan": "1837～1919",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -5943,6 +6266,7 @@
     "大隈重信": {
       "name": "大隈重信",
       "kana": "おおくましげのぶ",
+      "lifespan": "1838～1922",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -5961,6 +6285,7 @@
     "小村寿太郎": {
       "name": "小村寿太郎",
       "kana": "こむらじゅたろう",
+      "lifespan": "1855～1911",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "samurai",
@@ -5979,6 +6304,7 @@
     "東郷平八郎": {
       "name": "東郷平八郎",
       "kana": "とうごうへいはちろう",
+      "lifespan": "1848～1934",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "samurai",
@@ -5997,6 +6323,7 @@
     "陸奥宗光": {
       "name": "陸奥宗光",
       "kana": "むつむねみつ",
+      "lifespan": "1844～1897",
       "era": "明治時代",
       "primaryEraId": "meiji",
       "genre": "politics",
@@ -6015,6 +6342,7 @@
     "寺内正毅": {
       "name": "寺内正毅",
       "kana": "てらうちまさたけ",
+      "lifespan": "1852～1919",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -6033,6 +6361,7 @@
     "原敬": {
       "name": "原敬",
       "kana": "はらたかし",
+      "lifespan": "1856～1921",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -6051,6 +6380,7 @@
     "吉野作造": {
       "name": "吉野作造",
       "kana": "よしのさくぞう",
+      "lifespan": "1878～1933",
       "era": "大正時代",
       "primaryEraId": "taisho",
       "genre": "politics",
@@ -6069,6 +6399,7 @@
     "溥儀": {
       "name": "溥儀",
       "kana": "ふぎ",
+      "lifespan": "1906～1967",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6090,6 +6421,7 @@
     "昭和天皇": {
       "name": "昭和天皇",
       "kana": "しょうわてんのう",
+      "lifespan": "1901～1989",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6111,6 +6443,7 @@
     "ダグラス・マッカーサー": {
       "name": "ダグラス・マッカーサー",
       "kana": "だぐらすまっかーさー",
+      "lifespan": "1880～1964",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6129,6 +6462,7 @@
     "勝海舟": {
       "name": "勝海舟",
       "kana": "かつかいしゅう",
+      "lifespan": "1823～1899",
       "era": "幕末",
       "primaryEraId": "edo",
       "genre": "samurai",
@@ -6151,6 +6485,7 @@
     "吉田松陰": {
       "name": "吉田松陰",
       "kana": "よしだしょういん",
+      "lifespan": "1830～1859",
       "era": "幕末",
       "primaryEraId": "edo",
       "genre": "religion",
@@ -6169,6 +6504,7 @@
     "大川周明": {
       "name": "大川周明",
       "kana": "おおかわしゅうめい",
+      "lifespan": "1886～1957",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "religion",
@@ -6186,6 +6522,7 @@
     "東条英機": {
       "name": "東条英機",
       "kana": "とうじょうひでき",
+      "lifespan": "1884～1948",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6203,6 +6540,7 @@
     "張学良": {
       "name": "張学良",
       "kana": "ちょうがくりょう",
+      "lifespan": "1901～2001",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6220,6 +6558,7 @@
     "石原莞爾": {
       "name": "石原莞爾",
       "kana": "いしわらかんじ",
+      "lifespan": "1889～1949",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6237,6 +6576,7 @@
     "山本五十六": {
       "name": "山本五十六",
       "kana": "やまもといそろく",
+      "lifespan": "1884～1943",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6254,6 +6594,7 @@
     "栗林忠道": {
       "name": "栗林忠道",
       "kana": "くりばやしただみち",
+      "lifespan": "1891～1945",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6271,6 +6612,7 @@
     "南雲忠一": {
       "name": "南雲忠一",
       "kana": "なぐもちゅういち",
+      "lifespan": "1887～1944",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "samurai",
@@ -6288,6 +6630,7 @@
     "近衛文麿": {
       "name": "近衛文麿",
       "kana": "このえふみまろ",
+      "lifespan": "1891～1945",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6305,6 +6648,7 @@
     "松岡洋右": {
       "name": "松岡洋右",
       "kana": "まつおかようすけ",
+      "lifespan": "1880～1946",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6322,6 +6666,7 @@
     "木戸幸一": {
       "name": "木戸幸一",
       "kana": "きどこういち",
+      "lifespan": "1889～1977",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6339,6 +6684,7 @@
     "鈴木貫太郎": {
       "name": "鈴木貫太郎",
       "kana": "すずきかんたろう",
+      "lifespan": "1868～1948",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6356,6 +6702,7 @@
     "犬養毅": {
       "name": "犬養毅",
       "kana": "いぬかいつよし",
+      "lifespan": "1855～1932",
       "era": "昭和時代",
       "primaryEraId": "showa",
       "genre": "politics",
@@ -6371,6 +6718,7 @@
     "崇徳上皇": {
       "name": "崇徳上皇",
       "kana": "すとくじょうこう",
+      "lifespan": "1119～1164",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -6386,6 +6734,7 @@
     "後白河上皇": {
       "name": "後白河上皇",
       "kana": "ごしらかわじょうこう",
+      "lifespan": "1127～1192",
       "era": "平安時代",
       "primaryEraId": "heian",
       "genre": "politics",
@@ -6408,6 +6757,7 @@
     "後鳥羽上皇": {
       "name": "後鳥羽上皇",
       "kana": "ごとばじょうこう",
+      "lifespan": "1180～1239",
       "era": "鎌倉時代",
       "primaryEraId": "kamakura",
       "genre": "politics",

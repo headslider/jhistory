@@ -1153,6 +1153,15 @@ input[type="search"] {
   overflow-wrap: anywhere;
 }
 
+
+.modal-lifespan {
+  display: inline-block;
+  margin-left: .18em;
+  font-size: .5em;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 .modal-subtitle {
   margin: 14px 0 0;
   color: #c83732;
@@ -3201,4 +3210,7 @@ input[type="search"] {
     font-size: .68rem;
   }
 }
+
+
+
 

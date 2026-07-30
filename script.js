@@ -301,6 +301,7 @@ function normalizePersonRecord(record, modalDetails = {}) {
     image: record.image || "",
     imageFocus: record.imageFocus || "center",
     imageAlt: record.imageAlt || "",
+    lifespan: record.lifespan || "",
     modal
   };
   return person;
@@ -360,6 +361,11 @@ function personAliases(person) {
 
 function personDisplayNameText(person) {
   return person.displayName || (person.nameQualifier ? `${person.name}（${person.nameQualifier}）` : person.name);
+}
+
+function personLifespanHtml(person) {
+  const lifespan = String(person.lifespan || "").trim();
+  return lifespan ? `<span class="modal-lifespan">（${escapeHtml(lifespan)}）</span>` : "";
 }
 
 function personDisplayNameHtml(person) {
@@ -1447,7 +1453,7 @@ function openPerson(name, options = {}) {
     type: "person",
     icon: person.icon,
     eyebrow: applyStudyRuby(person.era),
-    titleHtml: personDisplayNameHtml(person),
+    titleHtml: `${personDisplayNameHtml(person)}${personLifespanHtml(person)}`,
     subtitle: applyStudyRuby(person.title),
     visual: findVisualForPerson(person),
     sections: personModalSections(person),
@@ -1743,3 +1749,4 @@ async function initApp() {
 }
 
 initApp();
+
