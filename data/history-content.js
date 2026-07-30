@@ -1464,7 +1464,7 @@ window.historyContentData = {
                 "織田信長",
                 "顕如"
               ],
-              "image": "assets/subcategories/subcategory-2518e8623f.webp",
+              "image": "assets/subcategories/subcategory-6386ee1757.webp",
               "imageFocus": "center",
               "imageAlt": "石山合戦と比叡山の画像",
               "yearLabel": "1570年ごろ"
