@@ -229,17 +229,54 @@ h3 { margin: 0 0 8px; font-size: 1.35rem; }
   box-shadow: 0 10px 24px rgba(74, 56, 28, .08);
 }
 .guide-grid div {
-  min-height: 108px;
+  --guide-accent: #2f7a58;
+  position: relative;
   display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 12px;
+  grid-template-columns: 46px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 14px;
+  row-gap: 2px;
   align-items: center;
+  min-height: 112px;
+  padding: 18px 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fffdf8 0%, #f8fbfb 100%);
+  border-color: color-mix(in srgb, var(--guide-accent), transparent 80%);
+  box-shadow: 0 8px 18px rgba(74, 56, 28, .07);
 }
+.guide-grid div::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--guide-accent);
+}
+.guide-grid div:nth-child(2) { --guide-accent: #287a9d; }
+.guide-grid div:nth-child(3) { --guide-accent: #5b3a8e; }
 .guide-grid span {
-  font-size: 1.7rem;
-  display: block;
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--guide-accent), white 86%);
+  color: var(--guide-accent);
+  font-size: 1.45rem;
+  line-height: 1;
 }
-.guide-grid p, .fact-card p, .person-card p { margin: 4px 0 0; }
+.guide-grid strong {
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+.guide-grid p {
+  color: color-mix(in srgb, var(--ink), white 18%);
+  font-size: .95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+.fact-card p, .person-card p { margin: 4px 0 0; }
 .fact-item {
   position: relative;
   min-height: 170px;
