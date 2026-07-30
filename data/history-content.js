@@ -1464,7 +1464,7 @@ window.historyContentData = {
                 "織田信長",
                 "顕如"
               ],
-              "image": "assets/subcategories/sengoku-ishiyama-hieizan-2cfb81a280.webp",
+              "image": "assets/subcategories/subcategory-2518e8623f.webp",
               "imageFocus": "center",
               "imageAlt": "石山合戦と比叡山の画像",
               "yearLabel": "1570年ごろ"
