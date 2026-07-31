@@ -165,7 +165,7 @@ ormalizeLineageThemesData(data)` / `loadLineageThemesData()` / `lineageThemes` /
 | `goBackModalHistory()` | モーダル履歴を1つ戻る。 |
 | `resetModalHistory()` | モーダル履歴を初期化する。 |
 | `renderLearningModal(...)` | 人物・アクション・出来事の共通モーダルを描画する。人物モーダルのお気に入り操作は `sideActions` として左アイコン下に★トグルを置き、タイトル側へ横長ボタンを追加しない。`comic` を渡すと `.modal-comic-button`(四コマ漫画で見る)をタグ行の下に表示する。 |
-| `openComicOverlay(src, title)` / `closeComicOverlay()` / `showComicPanel(i)` | 四コマ漫画ビューア。トップレイヤーの `<dialog id="comicOverlay">`。**携帯(≤760px)**は全幅の1枚画像 `.comic-image`(上下中央・縦スクロール可)、**PC(>760px)**は `.comic-slides` のコマ送りスライド(◀▶・ドット・←→キー)。コマ画像は元の `comic-*.webp` から派生した `comic-*-1..4.webp`(`assets/comics/`、Pillowで区切り線を検出して分割)を `comicPanelPaths()` で導出する。表示切替はCSSメディアクエリ。背景/×/Escで閉じる。 |
+| `openComicOverlay(src, title)` / `closeComicOverlay()` | 四コマ漫画ビューア。トップレイヤーの `<dialog id="comicOverlay">` に1枚画像 `.comic-image`(`assets/comics/comic-*.webp`)を表示する。**PC(>760px)**は画面内フィット、**携帯(≤760px)**は全幅・上下中央・縦スクロール可。背景/×/Escで閉じる。 |
 | `personModalSections(person)` | 人物モーダルのセクションを作る。 |
 | `actionModalSections(name, action)` | アクションモーダルのセクションを作る。 |
 | `eventModalSections(item, eraName)` | 出来事モーダルのセクションを作る。 |
