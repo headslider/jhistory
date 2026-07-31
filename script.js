@@ -1391,7 +1391,7 @@ function resetModalHistory() {
 }
 function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual, sections, tags, currentEntry = null, sideActions = "", comic = "" }) {
   const comicButtonHtml = comic
-    ? `<button class="modal-comic-button" type="button" data-comic-src="${escapeHtml(comic)}" data-comic-title="${escapeHtml(String(currentEntry?.id || ""))}"><span class="modal-comic-button-icon" aria-hidden="true">📖</span>四コマ漫画で見る</button>`
+    ? `<button class="modal-comic-button" type="button" data-comic-src="${escapeHtml(comic)}" data-comic-title="${escapeHtml(String(currentEntry?.id || ""))}"><span class="modal-comic-button-icon" aria-hidden="true">📖</span>漫画で見る</button>`
     : "";
   personDetail.innerHTML = `
     <article class="learning-modal-card modal-type-${escapeHtml(type)}">
