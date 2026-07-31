@@ -616,6 +616,8 @@ const inlineLinkAliases = [
   { name: "足利氏", type: "action", target: "室町幕府" },
   { name: "豊臣氏", type: "action", target: "天下統一" },
   { name: "徳川氏", type: "action", target: "江戸幕府" },
+  { name: "足利義昭", type: "action", target: "室町幕府" },
+  { name: "乙巳の変", type: "action", target: "大化の改新" },
   { name: "比叡山延暦寺焼き討ち", type: "event", target: "sengoku-ishiyama-hieizan" },
   { name: "羽柴秀吉", type: "person", target: "豊臣秀吉" },
   { name: "秀吉", type: "person", target: "豊臣秀吉" },
