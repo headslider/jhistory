@@ -1513,9 +1513,14 @@ function eventModalSections(item, eraName) {
   ];
 }
 function openEventSubcategory(id, options = {}) {
-  pushCurrentModalToHistory(Boolean(options.fromModal));
   const item = eventSubcategoryById.get(id);
   if (!item) return;
+  // 重複統合: 同名のアクションカードがある出来事は、出来事モーダルではなくアクションカードを開く。
+  if (item.title && actionCards[item.title]) {
+    openAction(item.title, options);
+    return;
+  }
+  pushCurrentModalToHistory(Boolean(options.fromModal));
   const era = eras.find((eraItem) => eraItem.id === item.eraId);
   renderLearningModal({
     type: "event",
