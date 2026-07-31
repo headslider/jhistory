@@ -1402,11 +1402,11 @@ function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual,
             <div class="modal-icon-tile" aria-hidden="true">${escapeHtml(icon || "💡")}</div>
             ${sideActions}
           </div>
-          <div class="modal-eyebrow-line">
-            <p class="modal-eyebrow">${eyebrow}</p>
+          <p class="modal-eyebrow">${eyebrow}</p>
+          <div class="modal-title-line">
+            <h2>${titleHtml}</h2>
             ${comicButtonHtml}
           </div>
-          <h2>${titleHtml}</h2>
           <p class="modal-subtitle">${subtitle}</p>
           <div class="tag-row modal-tag-row">
             ${tags.map((tag) => `<span class="tag">${applyStudyRuby(tag)}</span>`).join("")}
