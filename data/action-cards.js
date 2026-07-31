@@ -146,7 +146,8 @@ window.JAPAN_HISTORY_ACTION_CARDS_DATA = {
       "modal": {
         "whatHappened": "大化の改新は、645年に中大兄皇子と中臣鎌足が蘇我入鹿を倒した乙巳の変を出発点とする政治改革です。豪族が私有していた土地や人々を、天皇のもとで管理する考えを打ち出しました。その後、戸籍や税、役人の制度が整えられ、律令国家づくりが進みました。すべてがすぐ実現したわけではありませんが、豪族中心の政治を改め、国家のしくみを作ろうとした大きな転換です。",
         "whyImportant": "大化の改新は、豪族中心の政治から律令国家へ進む出発点です。税、戸籍、役人の制度が整う流れを学ぶ基礎になります。"
-      }
+      },
+      "comic": "assets/comics/comic-taika.webp"
     },
     "平城京": {
       "summary": "奈良の都",
@@ -361,7 +362,8 @@ window.JAPAN_HISTORY_ACTION_CARDS_DATA = {
         "whyImportant": "本能寺の変は、信長の天下統一が途中で終わり、豊臣秀吉が後を継ぐ転換点です。戦国時代の権力が急に変わる例です。"
       },
       "image": "assets/actions/action-072a979547.webp",
-      "imageAlt": "本能寺の変の画像"
+      "imageAlt": "本能寺の変の画像",
+      "comic": "assets/comics/comic-honnoji.webp"
     },
     "太閤検地": {
       "summary": "土地調べ",
@@ -389,7 +391,8 @@ window.JAPAN_HISTORY_ACTION_CARDS_DATA = {
       },
       "image": "assets/actions/action-9124621aee.webp",
       "imageFocus": "center",
-      "imageAlt": "刀狩の画像"
+      "imageAlt": "刀狩の画像",
+      "comic": "assets/comics/comic-katanagari.webp"
     },
     "関ヶ原の戦い": {
       "summary": "江戸への分かれ道",
@@ -425,7 +428,8 @@ window.JAPAN_HISTORY_ACTION_CARDS_DATA = {
       "modal": {
         "whatHappened": "参勤交代は、江戸幕府が大名に対し、領地と江戸を一定の期間ごとに行き来させた制度です。3代将軍徳川家光の時代に制度として整えられました。大名の妻子を江戸に住まわせることも求め、幕府への反乱を起こしにくくしました。大名行列には大きな費用がかかりましたが、街道、宿場町、江戸の消費を発展させる面もありました。",
         "whyImportant": "参勤交代は、大名の反乱を防ぎ、幕府が全国を支配した方法です。街道や宿場町の発展にもつながりました。大名の移動が人や物の流れを増やし、全国の交通と商業を結びつけた点も重要です。"
-      }
+      },
+      "comic": "assets/comics/comic-sankin.webp"
     },
     "開国": {
       "summary": "外国との関係の変化",
@@ -1122,7 +1126,8 @@ window.JAPAN_HISTORY_ACTION_CARDS_DATA = {
       "modal": {
         "whatHappened": "元寇は、元が1274年と1281年に日本へ行った二度の侵攻です。1274年の文永の役では、元・高麗の軍が博多湾付近へ上陸し、鎌倉幕府の御家人が戦いました。1281年の弘安の役では、幕府が九州に石塁を築くなどして備え、元軍は撤退しました。戦いの後、幕府は新しい土地を得られず、恩賞を十分に与えにくくなりました。御家人の不満が高まり、鎌倉幕府の弱体化につながりました。",
         "whyImportant": "元寇は、幕府が防衛に成功した一方、恩賞を出しにくく御家人の不満を高めた出来事です。鎌倉幕府が弱まる背景になります。"
-      }
+      },
+      "comic": "assets/comics/comic-genko.webp"
     },
     "不平等条約": {
       "summary": "開国後の外交課題",

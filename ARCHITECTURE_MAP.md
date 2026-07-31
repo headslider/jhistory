@@ -48,7 +48,7 @@
 |---|---|---|---|
 | `data/history-content.json` | `data/history-content.js` | `window.historyContentData` | 大カテゴリー、時代、時代画像、子カテゴリー、子カテゴリー画像、本文、年代、人物参照。 |
 | `data/people-data.json` | `data/people-data.js` | `window.JAPAN_HISTORY_PEOPLE_DATA` | 人物カード。表示名、ルビ、別名、`primaryEraId`、`genre`、`genreLabels`、モーダル本文、画像。人物説明の正本は `modal.profile`。人物ジャンルと主所属時代は外部JSONを正とし、`script.js` では推測・補完しない。 |
-| `data/action-cards.json` | `data/action-cards.js` | `window.JAPAN_HISTORY_ACTION_CARDS_DATA` | アクションカード。用語、summary、tags、modal.whatHappened、modal.whyImportant、画像。カード内 `description` は廃止済み。本文リンク対象の用語もここで管理する。 |
+| `data/action-cards.json` | `data/action-cards.js` | `window.JAPAN_HISTORY_ACTION_CARDS_DATA` | アクションカード。用語、summary、tags、modal.whatHappened、modal.whyImportant、画像。任意の `comic`(assets/comics 配下の四コマ漫画webp)を持つカードはモーダルに「四コマ漫画で見る」ボタンを表示する。カード内 `description` は廃止済み。本文リンク対象の用語もここで管理する。 |
 | `data/lineage-themes.json` | `data/lineage-themes.js` | `window.JAPAN_HISTORY_LINEAGE_THEMES_DATA` | オプションメニュー。系譜テーマは表示順 `order`、系譜内サブメニュー `menuSections`、テーマID、タイトル、summary、detail、参照する既存子カテゴリーID列で管理する。右上メニュー全体は `contentMenuSections` が正本で、`source: "lineageThemes"` の系譜セクションと、`日本の怨霊` などの `type: "content"` 特集を同じドロワーに表示する。系譜本文・画像は複製せず、既存子カテゴリーを参照する。 |
 | `data/learning-terms.json` | `data/learning-terms.js` | `window.JAPAN_HISTORY_LEARNING_TERMS_DATA` | ルビ辞書、特殊語、人物・アクションカードにならない初出太字語のツールチップ説明文。`schemaVersion: 1`、`terms[語].reading` を基本に、特別な補足説明が必要な非リンク語だけ任意の `terms[語].tooltip` を持つ。`～時代`、人物カード名、アクションカード名、`武士` などの一般語には tooltip を持たせない。 |
 
@@ -164,7 +164,8 @@ ormalizeLineageThemesData(data)` / `loadLineageThemesData()` / `lineageThemes` /
 | `openModalEntry(entry)` | 履歴エントリーからモーダルを開く。 |
 | `goBackModalHistory()` | モーダル履歴を1つ戻る。 |
 | `resetModalHistory()` | モーダル履歴を初期化する。 |
-| `renderLearningModal(...)` | 人物・アクション・出来事の共通モーダルを描画する。人物モーダルのお気に入り操作は `sideActions` として左アイコン下に★トグルを置き、タイトル側へ横長ボタンを追加しない。 |
+| `renderLearningModal(...)` | 人物・アクション・出来事の共通モーダルを描画する。人物モーダルのお気に入り操作は `sideActions` として左アイコン下に★トグルを置き、タイトル側へ横長ボタンを追加しない。`comic` を渡すと `.modal-comic-button`(四コマ漫画で見る)をタグ行の下に表示する。 |
+| `openComicOverlay(src, title)` / `closeComicOverlay()` | 四コマ漫画ビューア。トップレイヤーの `<dialog id="comicOverlay">` を `showModal()` で開き、`.comic-image` を `object-fit: contain` + `max 100dvh/100vw` でPC・携帯ともスクロールなしに全体表示する。背景/×/Escで閉じる。 |
 | `personModalSections(person)` | 人物モーダルのセクションを作る。 |
 | `actionModalSections(name, action)` | アクションモーダルのセクションを作る。 |
 | `eventModalSections(item, eraName)` | 出来事モーダルのセクションを作る。 |

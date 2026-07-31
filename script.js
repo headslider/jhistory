@@ -201,6 +201,7 @@ function normalizeActionCardEntry(name, entry) {
     image: entry?.image || "",
     imageFocus: entry?.imageFocus || "center",
     imageAlt: entry?.imageAlt || "",
+    comic: entry?.comic || "",
     modal: {
       whatHappened: modal.whatHappened || entry?.whatHappened || entry?.text || "",
       whyImportant: modal.whyImportant || entry?.whyImportant || ""
@@ -1388,7 +1389,10 @@ function resetModalHistory() {
   modalHistory.length = 0;
   currentModalEntry = null;
 }
-function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual, sections, tags, currentEntry = null, sideActions = "" }) {
+function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual, sections, tags, currentEntry = null, sideActions = "", comic = "" }) {
+  const comicButtonHtml = comic
+    ? `<button class="modal-comic-button" type="button" data-comic-src="${escapeHtml(comic)}" data-comic-title="${escapeHtml(String(currentEntry?.id || ""))}"><span class="modal-comic-button-icon" aria-hidden="true">📖</span>四コマ漫画で見る</button>`
+    : "";
   personDetail.innerHTML = `
     <article class="learning-modal-card modal-type-${escapeHtml(type)}">
       ${modalHistoryHtml()}
@@ -1404,6 +1408,7 @@ function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual,
           <div class="tag-row modal-tag-row">
             ${tags.map((tag) => `<span class="tag">${applyStudyRuby(tag)}</span>`).join("")}
           </div>
+          ${comicButtonHtml}
         </div>
         ${modalVisualHtml(visual, icon, subtitle)}
       </header>
@@ -1490,6 +1495,7 @@ function openAction(name, options = {}) {
     visual: findVisualForAction(name, tags, action),
     sections: actionModalSections(name, action),
     tags,
+    comic: action.comic || "",
     currentEntry: { type: "action", id: name }
   });
   currentModalEntry = { type: "action", id: name };
@@ -1613,6 +1619,11 @@ personDialog.addEventListener("click", (event) => {
     toggleFavorite(favoriteButton.dataset.personName, event);
     return;
   }
+  const comicButton = event.target.closest(".modal-comic-button");
+  if (comicButton) {
+    openComicOverlay(comicButton.dataset.comicSrc, comicButton.dataset.comicTitle);
+    return;
+  }
   const personButton = event.target.closest(".person-inline");
   if (personButton) {
     openPerson(personButton.dataset.personName, { fromModal: true });
@@ -1627,6 +1638,25 @@ personDialog.addEventListener("click", (event) => {
   if (eventButton) {
     openEventSubcategory(eventButton.dataset.eventId, { fromModal: true });
   }
+});
+
+const comicOverlay = document.getElementById("comicOverlay");
+const comicImage = document.getElementById("comicImage");
+function openComicOverlay(src, title) {
+  if (!comicOverlay || !comicImage || !src) return;
+  comicImage.src = src;
+  comicImage.alt = title ? `${title}の四コマ漫画` : "四コマ漫画";
+  if (!comicOverlay.open) comicOverlay.showModal();
+}
+function closeComicOverlay() {
+  if (comicOverlay && comicOverlay.open) comicOverlay.close();
+}
+document.getElementById("comicClose")?.addEventListener("click", closeComicOverlay);
+comicOverlay?.addEventListener("click", (event) => {
+  if (!event.target.closest(".comic-image") && !event.target.closest(".comic-close")) closeComicOverlay();
+});
+comicOverlay?.addEventListener("close", () => {
+  if (comicImage) comicImage.src = "";
 });
 document.querySelector(".people-accordion")?.addEventListener("toggle", (event) => {
   const action = event.currentTarget.querySelector(".group-action");

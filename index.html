@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Noto+Serif+JP:wght@500;700;900&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260730-pc-guide-grid-align">
+    <link rel="stylesheet" href="styles.css?v=20260731f-comic">
   </head>
   <body>
     <header class="topbar" aria-label="現在地と設定">
@@ -114,13 +114,19 @@
       <button class="icon-button close-modal" id="closePerson" aria-label="閉じる">×</button>
       <div id="personDetail"></div>
     </dialog>
+    <dialog class="comic-overlay" id="comicOverlay" aria-label="四コマ漫画">
+      <div class="comic-overlay-inner">
+        <button class="comic-close" id="comicClose" type="button" aria-label="閉じる">×</button>
+        <img class="comic-image" id="comicImage" src="" alt="四コマ漫画">
+      </div>
+    </dialog>
 
-    <script src="data/history-content.js?v=20260731e-tokusei-monto"></script>
-    <script src="data/people-data.js?v=20260731e-tokusei-monto"></script>
-    <script src="data/action-cards.js?v=20260731e-tokusei-monto"></script>
-    <script src="data/lineage-themes.js?v=20260731e-tokusei-monto"></script>
-    <script src="data/learning-terms.js?v=20260731e-tokusei-monto"></script>
-    <script src="script.js?v=20260731e-tokusei-monto"></script>
+    <script src="data/history-content.js?v=20260731f-comic"></script>
+    <script src="data/people-data.js?v=20260731f-comic"></script>
+    <script src="data/action-cards.js?v=20260731f-comic"></script>
+    <script src="data/lineage-themes.js?v=20260731f-comic"></script>
+    <script src="data/learning-terms.js?v=20260731f-comic"></script>
+    <script src="script.js?v=20260731f-comic"></script>
   </body>
 </html>
 
