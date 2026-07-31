@@ -276,7 +276,7 @@ function run() {
     && !stylesText.includes("lineage-card:not(:last-child)::after")
     && stylesText.includes("rgba(0, 0, 0, .50)")
     && stylesText.includes(".lineage-card");
-  const lineageDetailInlineLinkSupport = scriptText.includes('if (detail) detail.innerHTML = enrichDetailLinks(activeTheme.detail || "");')
+  const lineageDetailInlineLinkSupport = /detail\.innerHTML = enrichDetailLinks\(activeTheme\.detail \|\| ""/.test(scriptText)
     && scriptText.includes('const personButton = event.target.closest(".person-inline");')
     && scriptText.includes('openPerson(personButton.dataset.personName);')
     && scriptText.includes('const actionButton = event.target.closest(".action-inline");')

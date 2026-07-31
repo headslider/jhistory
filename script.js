@@ -617,7 +617,7 @@ const inlineLinkAliases = [
   { name: "豊臣氏", type: "action", target: "天下統一" },
   { name: "徳川氏", type: "action", target: "江戸幕府" },
   { name: "足利義昭", type: "action", target: "室町幕府" },
-  { name: "乙巳の変", type: "action", target: "大化の改新" },
+  { name: "壇ノ浦の戦い", type: "event", target: "heian-genpei" },
   { name: "比叡山延暦寺焼き討ち", type: "event", target: "sengoku-ishiyama-hieizan" },
   { name: "羽柴秀吉", type: "person", target: "豊臣秀吉" },
   { name: "秀吉", type: "person", target: "豊臣秀吉" },
@@ -631,6 +631,11 @@ const inlineLinkAliases = [
   { name: "頼朝", type: "person", target: "源頼朝" },
   { name: "義経", type: "person", target: "源義経" }
 ];
+
+// Action-card titles that are safe to link even when a kanji sits next to them
+// (e.g. followed by 後: 元寇後 / 第二次世界大戦後). They are unambiguous terms, so the
+// usual kanji-adjacency guard would only ever reject a valid link here.
+const kanjiAdjacentActionTitles = new Set(["元寇", "第二次世界大戦"]);
 
 function stripActionParentheticalName(name) {
   return String(name || "").replace(/\s*[（(][^）)]*[）)]\s*/g, "").trim();
@@ -680,7 +685,7 @@ function enrichDetailLinks(text, options = {}) {
       if (name === "元") return /元が大軍|元の襲来|元寇/.test(text);
       return text.includes(name);
     })
-    .map((name) => ({ name, type: "action", target: name }));
+    .map((name) => ({ name, type: "action", target: name, allowKanjiAdjacent: kanjiAdjacentActionTitles.has(name) }));
   const currentEventTitle = options.currentEventTitle || "";
   const eventItems = eraEventSubcategories
     .filter((item) => item.title && item.title !== currentEventTitle && !actionCards[item.title] && text.includes(item.title))
@@ -875,7 +880,7 @@ function renderLineageContent(activeTheme) {
     list.innerHTML = "";
     return;
   }
-  if (detail) detail.innerHTML = enrichDetailLinks(activeTheme.detail || "");
+  if (detail) detail.innerHTML = enrichDetailLinks(activeTheme.detail || "", { groupRubyBoldTerms: new Set() });
   list.innerHTML = activeTheme.subcategoryIds.map((id, index) => {
     const item = eventSubcategoryById.get(id);
     if (!item) return `<article class="lineage-card lineage-card-missing"><span class="lineage-step">${index + 1}</span><h3>${id}</h3></article>`;
@@ -964,7 +969,7 @@ function renderFreeContent(content) {
   const detail = document.getElementById("lineageDetail");
   const list = document.getElementById("lineageList");
   if (detail) {
-    detail.innerHTML = enrichDetailLinks(content.detail || content.summary || "");
+    detail.innerHTML = enrichDetailLinks(content.detail || content.summary || "", { groupRubyBoldTerms: new Set() });
   }
   if (list) {
     const relatedPeople = (content.relatedPeople || [])
