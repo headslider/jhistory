@@ -2477,7 +2477,7 @@ input[type="search"] {
     grid-template-columns: 42px minmax(0, 1fr);
     column-gap: 9px;
     align-items: start;
-    padding-right: 42px;
+    padding-right: 30px;
   }
 
   .modal-icon-stack {
@@ -3216,13 +3216,20 @@ input[type="search"] {
 
 
 /* 2026-07-31 comic (四コマ漫画) button + fullscreen viewer */
+.modal-eyebrow-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.modal-eyebrow-line .modal-eyebrow {
+  margin: 0;
+}
 .modal-comic-button {
-  grid-column: 1 / -1;
-  justify-self: start;
+  flex: none;
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  margin-top: 12px;
   padding: 6px 12px;
   white-space: nowrap;
   border: 0;
