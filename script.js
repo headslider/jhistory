@@ -1649,21 +1649,56 @@ personDialog.addEventListener("click", (event) => {
 
 const comicOverlay = document.getElementById("comicOverlay");
 const comicImage = document.getElementById("comicImage");
+const comicPanel = document.getElementById("comicPanel");
+const comicDots = document.getElementById("comicDots");
+let comicPanels = [];
+let comicPanelIndex = 0;
+
+function comicPanelPaths(src) {
+  const base = String(src || "").replace(/\.webp$/i, "");
+  return base ? [1, 2, 3, 4].map((i) => `${base}-${i}.webp`) : [];
+}
+function showComicPanel(index) {
+  if (!comicPanels.length) return;
+  comicPanelIndex = (index + comicPanels.length) % comicPanels.length;
+  if (comicPanel) comicPanel.src = comicPanels[comicPanelIndex];
+  if (comicDots) [...comicDots.querySelectorAll(".comic-dot")].forEach((dot, i) => {
+    dot.classList.toggle("is-active", i === comicPanelIndex);
+    dot.setAttribute("aria-selected", i === comicPanelIndex ? "true" : "false");
+  });
+}
 function openComicOverlay(src, title) {
-  if (!comicOverlay || !comicImage || !src) return;
-  comicImage.src = src;
-  comicImage.alt = title ? `${title}の四コマ漫画` : "四コマ漫画";
+  if (!comicOverlay || !src) return;
+  const alt = title ? `${title}の四コマ漫画` : "四コマ漫画";
+  if (comicImage) { comicImage.src = src; comicImage.alt = alt; }
+  comicPanels = comicPanelPaths(src);
+  if (comicDots) comicDots.innerHTML = comicPanels
+    .map((_, i) => `<button class="comic-dot" type="button" role="tab" data-panel="${i}" aria-label="${i + 1}コマ目"></button>`).join("");
+  if (comicPanel) comicPanel.alt = alt;
+  showComicPanel(0);
   if (!comicOverlay.open) comicOverlay.showModal();
 }
 function closeComicOverlay() {
   if (comicOverlay && comicOverlay.open) comicOverlay.close();
 }
 document.getElementById("comicClose")?.addEventListener("click", closeComicOverlay);
+document.getElementById("comicPrev")?.addEventListener("click", () => showComicPanel(comicPanelIndex - 1));
+document.getElementById("comicNext")?.addEventListener("click", () => showComicPanel(comicPanelIndex + 1));
+comicDots?.addEventListener("click", (event) => {
+  const dot = event.target.closest(".comic-dot");
+  if (dot) showComicPanel(Number(dot.dataset.panel));
+});
 comicOverlay?.addEventListener("click", (event) => {
-  if (!event.target.closest(".comic-image") && !event.target.closest(".comic-close")) closeComicOverlay();
+  if (!event.target.closest(".comic-image, .comic-slides, .comic-close")) closeComicOverlay();
+});
+document.addEventListener("keydown", (event) => {
+  if (!comicOverlay || !comicOverlay.open) return;
+  if (event.key === "ArrowLeft") showComicPanel(comicPanelIndex - 1);
+  else if (event.key === "ArrowRight") showComicPanel(comicPanelIndex + 1);
 });
 comicOverlay?.addEventListener("close", () => {
   if (comicImage) comicImage.src = "";
+  if (comicPanel) comicPanel.src = "";
 });
 document.querySelector(".people-accordion")?.addEventListener("toggle", (event) => {
   const action = event.currentTarget.querySelector(".group-action");

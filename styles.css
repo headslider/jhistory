@@ -3280,7 +3280,7 @@ dialog.comic-overlay::backdrop {
   box-sizing: border-box;
 }
 .comic-image {
-  display: block;
+  display: none;
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -3289,6 +3289,63 @@ dialog.comic-overlay::backdrop {
   border-radius: 8px;
   box-shadow: 0 16px 44px rgba(0, 0, 0, .55);
 }
+/* PC: per-panel slideshow */
+.comic-slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.comic-stage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+}
+.comic-panel {
+  display: block;
+  max-width: calc(100vw - 150px);
+  max-height: calc(100dvh - 96px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, .55);
+}
+.comic-nav {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .92);
+  color: #23303e;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
+}
+.comic-nav:hover { background: #fff; }
+.comic-nav:focus-visible { outline: 3px solid rgba(9, 92, 133, .5); outline-offset: 2px; }
+.comic-dots {
+  display: flex;
+  gap: 10px;
+}
+.comic-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .45);
+  cursor: pointer;
+}
+.comic-dot.is-active { background: #fff; }
+.comic-dot:focus-visible { outline: 2px solid rgba(9, 92, 133, .6); outline-offset: 2px; }
 .comic-close {
   position: absolute;
   top: 12px;
@@ -3322,7 +3379,11 @@ dialog.comic-overlay::backdrop {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
+  .comic-slides {
+    display: none;
+  }
   .comic-image {
+    display: block;
     width: 100vw;
     max-width: 100vw;
     max-height: none;
