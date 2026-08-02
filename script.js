@@ -1390,9 +1390,7 @@ function resetModalHistory() {
   currentModalEntry = null;
 }
 function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual, sections, tags, currentEntry = null, sideActions = "", comic = "" }) {
-  const comicButtonHtml = comic
-    ? `<button class="modal-comic-button" type="button" data-comic-src="${escapeHtml(comic)}" data-comic-title="${escapeHtml(String(currentEntry?.id || ""))}"><span class="modal-comic-button-icon" aria-hidden="true">📖</span>漫画で見る</button>`
-    : "";
+  // 漫画で見るボタンはいったん廃止(comic データ/ビューアは残置、再開は下の <h2> をタイトル行に戻すだけ)。
   personDetail.innerHTML = `
     <article class="learning-modal-card modal-type-${escapeHtml(type)}">
       ${modalHistoryHtml()}
@@ -1403,10 +1401,7 @@ function renderLearningModal({ type, icon, eyebrow, titleHtml, subtitle, visual,
             ${sideActions}
           </div>
           <p class="modal-eyebrow">${eyebrow}</p>
-          <div class="modal-title-line">
-            <h2>${titleHtml}</h2>
-            ${comicButtonHtml}
-          </div>
+          <h2>${titleHtml}</h2>
           <p class="modal-subtitle">${subtitle}</p>
           <div class="tag-row modal-tag-row">
             ${tags.map((tag) => `<span class="tag">${applyStudyRuby(tag)}</span>`).join("")}
