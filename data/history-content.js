@@ -1624,7 +1624,7 @@ window.historyContentData = {
                 "武田勝頼"
               ],
               "image": "assets/subcategories/subcategory-b788874601.webp",
-              "imageFocus": "center",
+              "imageFocus": "up",
               "yearLabel": "1575年",
               "imageAlt": "長篠の戦いの画像"
             },
