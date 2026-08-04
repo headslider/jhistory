@@ -1623,9 +1623,10 @@ window.historyContentData = {
                 "徳川家康",
                 "武田勝頼"
               ],
-              "image": "assets/subcategories/subcategory-23.webp",
-              "imageFocus": "up",
-              "yearLabel": "1575年"
+              "image": "assets/subcategories/subcategory-b788874601.webp",
+              "imageFocus": "center",
+              "yearLabel": "1575年",
+              "imageAlt": "長篠の戦いの画像"
             },
             {
               "id": "azuchi-honnoji",
