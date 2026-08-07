@@ -66,6 +66,9 @@ function normalizeLineageThemesData(data) {
               subtitle: String(item?.subtitle || '').trim(),
               summary: String(item?.summary || '').trim(),
               detail: String(item?.detail || item?.summary || '').trim(),
+              subcategoryIds: (Array.isArray(item?.subcategoryIds) ? item.subcategoryIds : [])
+                .map((sid) => String(sid || '').trim())
+                .filter(Boolean),
               relatedPeople: (Array.isArray(item?.relatedPeople) ? item.relatedPeople : [])
                 .map((name) => String(name || '').trim())
                 .filter(Boolean)
@@ -973,6 +976,16 @@ function renderFreeContent(content) {
     detail.innerHTML = enrichDetailLinks(content.detail || content.summary || "", { groupRubyBoldTerms: new Set() });
   }
   if (list) {
+    const ids = Array.isArray(content.subcategoryIds) ? content.subcategoryIds : [];
+    if (ids.length) {
+      list.classList.remove("lineage-related-person-list");
+      list.innerHTML = ids.map((id, index) => {
+        const item = eventSubcategoryById.get(id);
+        if (!item) return `<article class="lineage-card lineage-card-missing"><span class="lineage-step">${index + 1}</span><h3>${id}</h3></article>`;
+        return `<article class="lineage-card" data-event-id="${escapeHtml(item.id)}"><span class="lineage-step">${index + 1}</span><button class="lineage-event-button" type="button" data-event-id="${escapeHtml(item.id)}">${lineageItemImageMarkup(item)}<span>${applyStudyRuby(item.title)}</span></button></article>${index < ids.length - 1 ? `<span class="lineage-flow-arrow" aria-hidden="true">→</span>` : ""}`;
+      }).join("");
+      return;
+    }
     const relatedPeople = (content.relatedPeople || [])
       .map((name) => personByName.get(name))
       .filter(Boolean);
