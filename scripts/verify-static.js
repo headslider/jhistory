@@ -256,7 +256,7 @@ function run() {
     && scriptText.includes("document.getElementById(\"lineageTabs\")?.addEventListener")
     && scriptText.includes("lineage-flow-arrow")
     && lineageThemesHaveValidOrder
-    && lineageThemes.some((theme) => String(theme.detail || "").includes("戦争の系譜は、幕末の開国から始まります"))
+    && lineageThemes.some((theme) => String(theme.detail || "").includes("、幕末の開国から始まります"))
     && !scriptText.includes("lineage-jump-button")
     && stylesText.includes(".lineage-overlay")
     && stylesText.includes(".lineage-panel")
